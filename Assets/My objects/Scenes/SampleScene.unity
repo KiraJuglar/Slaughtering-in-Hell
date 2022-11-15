@@ -123,6 +123,31 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &36575561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5793326515315879759, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
+  m_PrefabInstance: {fileID: 5497911012450929346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &36575573
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36575561}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0d0a50d4817ed7a45822f2dbb6e9e438, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,6 +373,22 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1575776936, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
+      propertyPath: m_Size.x
+      value: 0.58821565
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575776936, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
+      propertyPath: m_Size.y
+      value: 1.1764314
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575776936, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575776936, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.11
+      objectReference: {fileID: 0}
     - target: {fileID: 4304540308131046905, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -356,6 +397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8236076868534688488, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 917091399, guid: 2c26504e5ec58914fb0b54eba201a55e, type: 3}
     - target: {fileID: 8957440886673857214, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
       propertyPath: m_RootOrder
       value: 1

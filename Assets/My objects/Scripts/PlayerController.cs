@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     #region Variables del movimiento del jugador
     [SerializeField] float jumpForce = 6f;
-        [SerializeField] float runningSpeed = 2f;
+        [SerializeField] float runningSpeed = 0.2f;
         Rigidbody2D rigidBody;
     #endregion
 
@@ -20,16 +20,21 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Variables para disparo de jugador
-    [SerializeField] Camera playerCamera; //Camara que nos otorgara la posición en la que apunta y dispara el usuario
+    [SerializeField] Camera playerCamera; //Camara que nos otorgara la posiciï¿½n en la que apunta y dispara el usuario
     [SerializeField] GameObject bullet;
     [SerializeField] Transform aim; //Mira del jugador
     Vector2 facingDirection;
     #endregion
 
+    private Animator anim;
+    
+
     // Start is called before the first frame update
     void Start()
     {
+        // Grab references for rigidBody and animator from objetc
         rigidBody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -40,12 +45,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         #region Movimiento
         if (Input.GetButtonDown("Jump"))
         {
             Jump();
         }
-
         #endregion
 
         #region Disparo
@@ -62,7 +67,7 @@ public class PlayerController : MonoBehaviour
         #endregion
     }
 
-    #region Métodos de movimiento del jugador
+    #region Mï¿½todos de movimiento del jugador
     void Jump()
     {
         rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -70,7 +75,8 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        rigidBody.velocity = new Vector2(Input.GetAxis("Horizontal") * runningSpeed, rigidBody.velocity.y);
+        float horizontalInput = Input.GetAxis("Horizontal");
+        rigidBody.velocity = new Vector2(horizontalInput * runningSpeed, rigidBody.velocity.y);
         if (Input.GetAxis("Horizontal") > 0)
         {
             GetComponent<SpriteRenderer>().flipX = true;
@@ -79,11 +85,12 @@ public class PlayerController : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
+        anim.SetBool("run", horizontalInput != 0);
     }
 
     #endregion
 
-    #region Métodos de estadisticas del jugador
+    #region Mï¿½todos de estadisticas del jugador
     public void CollectHealth(int points)
     {
         if (healthPoints + points <= 0)
