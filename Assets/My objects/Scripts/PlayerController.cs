@@ -10,9 +10,9 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Variables del movimiento del jugador
-    [SerializeField] float jumpForce = 6f;
-        [SerializeField] float runningSpeed = 0.2f;
-        Rigidbody2D rigidBody;
+    [SerializeField] float jumpForce = 2f;
+    [SerializeField] float runningSpeed = 0.2f;
+    Rigidbody2D rigidBody;
     #endregion
 
     #region Variables de stats del jugador
@@ -27,6 +27,11 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     private Animator anim;
+
+    # region Brinco
+    [SerializeField] private bool jumpRequest = false;
+    [SerializeField] private int maxJumps = 2, availableJumps = 0;
+    #endregion
     
 
     // Start is called before the first frame update
@@ -40,14 +45,19 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+        if (jumpRequest)
+        {
+            rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            availableJumps--;
+            jumpRequest = false;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
         #region Movimiento
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.Space) && availableJumps > 0)
         {
             Jump();
         }
@@ -70,7 +80,7 @@ public class PlayerController : MonoBehaviour
     #region M�todos de movimiento del jugador
     void Jump()
     {
-        rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        jumpRequest = true;
     }
 
     void Move()
@@ -104,7 +114,13 @@ public class PlayerController : MonoBehaviour
             healthPoints = MAX_HEALTH;
         }
     }
-
-
     #endregion
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Ground"))
+        {
+            availableJumps = maxJumps;
+        }
+    }
 }
