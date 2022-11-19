@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour
             availableJumps--;
             jumpRequest = false;
         }
+        
+        
     }
 
     // Update is called once per frame
