@@ -125,4 +125,13 @@ public class PlayerController : MonoBehaviour
             availableJumps = maxJumps;
         }
     }
+
+    public void TakeDamage(int damage)
+    {
+        healthPoints -= damage;
+        if (healthPoints <= 0)
+        {
+            //Die
+        }
+    }
 }
