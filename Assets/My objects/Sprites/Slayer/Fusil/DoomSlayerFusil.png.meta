@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2c26504e5ec58914fb0b54eba201a55e
+guid: f9c8456853d8cf842a32d836b3b5579e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,2332 +106,2080 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DoomSlayer_0
+      name: DoomSlayerFusil_0
       rect:
         serializedVersion: 2
         x: 2
         y: 1107
         width: 67
         height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bec785d7c25cc548a4f80b15c83b3f1
-      internalID: -602893658
+      spriteID: e3e353db789e5ba4cb78a58cdaae2d7d
+      internalID: 1247646704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_1
+      name: DoomSlayerFusil_1
       rect:
         serializedVersion: 2
         x: 71
         y: 1110
         width: 57
         height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fbf6b4b7367454499091421e2a71f16
-      internalID: -2134262372
+      spriteID: 57700263773ead543ac7785a1afd06b4
+      internalID: 1309934632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_2
+      name: DoomSlayerFusil_2
       rect:
         serializedVersion: 2
         x: 130
         y: 1112
         width: 68
         height: 86
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98587ea339eae6340b1d69c73436bd52
-      internalID: 1092246469
+      spriteID: 7ccbed3553b21324f9b125e363e40b89
+      internalID: -1101635069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_3
+      name: DoomSlayerFusil_3
       rect:
         serializedVersion: 2
         x: 200
         y: 1115
         width: 73
         height: 83
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7ee0faf3e116cf4c96399dfd3a247a7
-      internalID: 1061717325
+      spriteID: 9cceb3626c4ccab4995422cd273d2336
+      internalID: -302906364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_4
+      name: DoomSlayerFusil_4
       rect:
         serializedVersion: 2
         x: 275
         y: 1116
         width: 59
         height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4538ebd0f6a7d94093012e805254738
-      internalID: -334987573
+      spriteID: 853d90da7ed6d4e42bb56eb28c89469e
+      internalID: 1447226085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_5
+      name: DoomSlayerFusil_5
       rect:
         serializedVersion: 2
         x: 344
         y: 1097
         width: 54
         height: 81
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4687f923a6004b446bfb85f0606d5ff0
-      internalID: -1507936874
+      spriteID: f8229dcdc6955c946a0452ccb102b7ab
+      internalID: 405508762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_6
+      name: DoomSlayerFusil_6
       rect:
         serializedVersion: 2
         x: 409
         y: 1097
         width: 70
         height: 83
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5d478f9d5d187044bd9b60eb22ac417
-      internalID: -2093599695
+      spriteID: dd60740a4dd018741879abe8794386fc
+      internalID: -2100800641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_7
+      name: DoomSlayerFusil_7
       rect:
         serializedVersion: 2
         x: 489
         y: 1096
         width: 68
         height: 87
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1bce137230b88d478aef5529521eee6
-      internalID: 2037795998
+      spriteID: b047ebf292c97e348ac85d33a47dcd6b
+      internalID: -1553251132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_8
+      name: DoomSlayerFusil_8
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1097
+        width: 78
+        height: 49
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cb0747d0235804f8d936cf6270ac6a
+      internalID: 728467284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomSlayerFusil_9
       rect:
         serializedVersion: 2
         x: 2
         y: 1001
         width: 61
         height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a29d3444e359d049be331a27095f03f
-      internalID: 180685855
+      spriteID: 1f9e554b79638604cb5616bc2876fdda
+      internalID: 1378507396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_9
+      name: DoomSlayerFusil_10
       rect:
         serializedVersion: 2
         x: 65
         y: 1003
         width: 57
         height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4c3fef5461bae6438b792263ac8fe3c
-      internalID: 1135293599
+      spriteID: 4dbffb3e72fe46e41ac07d04a568410f
+      internalID: -1022373068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_10
+      name: DoomSlayerFusil_11
       rect:
         serializedVersion: 2
         x: 124
         y: 1003
         width: 58
         height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db4ab868b32acf748b2ff2c2832dfdf7
-      internalID: -1688018398
+      spriteID: e0df95157efbbc6479ebbbc8d0b67f4b
+      internalID: -755267441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_11
+      name: DoomSlayerFusil_12
       rect:
         serializedVersion: 2
         x: 185
         y: 1005
         width: 66
         height: 87
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 664dee20bdc5bca4cbed4645a975f6b3
-      internalID: -121815565
+      spriteID: 6e7330a6e50cc8f458090dc107161dfc
+      internalID: 506237633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_12
+      name: DoomSlayerFusil_13
       rect:
         serializedVersion: 2
         x: 253
         y: 1005
         width: 57
         height: 87
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73fe6b9ab0f48f946afa6f3ef760f750
-      internalID: -919832623
+      spriteID: 8780d39715157604da3cf1c52d49a16f
+      internalID: -1486131606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_13
+      name: DoomSlayerFusil_14
       rect:
         serializedVersion: 2
         x: 321
         y: 992
         width: 53
         height: 87
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d7690c090e71f74ebc4eaadcd581584
-      internalID: -550402642
+      spriteID: d2f3896ade44cc94c8050fb76c908a57
+      internalID: -953125186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_14
+      name: DoomSlayerFusil_15
       rect:
         serializedVersion: 2
         x: 390
         y: 992
         width: 64
         height: 87
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b3f30e4a7da14e43a7168d510f499bd
-      internalID: -588078991
+      spriteID: 1d3a8e0df54d9c14faa7fcf839f7ef55
+      internalID: 476912994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_15
+      name: DoomSlayerFusil_16
       rect:
         serializedVersion: 2
         x: 470
         y: 992
         width: 62
         height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 743501e3a479198469de0d889857a6a1
-      internalID: -2051930490
+      spriteID: e32e31b1d2a5d714b8ef9b2a61b97673
+      internalID: -1580174174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_16
+      name: DoomSlayerFusil_17
       rect:
         serializedVersion: 2
         x: 2
         y: 896
         width: 63
         height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c09f28de8a30d0948a697e403dca0d50
-      internalID: 462069839
+      spriteID: 073a3b61021d80943b4f331c852c8754
+      internalID: -1721907617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_17
+      name: DoomSlayerFusil_18
       rect:
         serializedVersion: 2
         x: 66
         y: 898
         width: 61
         height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9881c8451240d3044ba9e22b91080cf1
-      internalID: -670260183
+      spriteID: 317897dee8fc679428dc53526ea4c920
+      internalID: -1806448611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_18
+      name: DoomSlayerFusil_19
       rect:
         serializedVersion: 2
         x: 128
         y: 899
         width: 62
         height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc2074d3e2f0a464f8fd18c58d47376f
-      internalID: -1721975210
+      spriteID: 2855853758a885f4885ad9a245cc249c
+      internalID: 1081220363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_19
+      name: DoomSlayerFusil_20
       rect:
         serializedVersion: 2
         x: 193
         y: 898
         width: 66
         height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 335b40e5691c3854aaefe234d267ff07
-      internalID: -1183447082
+      spriteID: df405eb0c60860d44bc57e325c6db169
+      internalID: -1856225660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_20
+      name: DoomSlayerFusil_21
       rect:
         serializedVersion: 2
         x: 262
         y: 899
         width: 54
         height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62753ad3c2721c54fa22e37595d1858c
-      internalID: -1583819736
+      spriteID: 8000f4d32a60b9e4fae27cb5ad410617
+      internalID: -288648109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_21
+      name: DoomSlayerFusil_22
       rect:
         serializedVersion: 2
         x: 322
         y: 885
         width: 60
         height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a77e89a97be9ec7499a840e78eea173c
-      internalID: -508829168
+      spriteID: e7d89bee7f0540445a47dffb8bf6132d
+      internalID: 1738087840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_22
+      name: DoomSlayerFusil_23
       rect:
         serializedVersion: 2
         x: 396
         y: 885
         width: 61
         height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25b00a26767d5754f832c912892c9af7
-      internalID: 1445426486
+      spriteID: 38928e626a60e154d80db55e78177c0d
+      internalID: 1655817479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_23
+      name: DoomSlayerFusil_24
       rect:
         serializedVersion: 2
         x: 481
         y: 885
         width: 60
         height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a850eccf04040f845906530f0978f14f
-      internalID: 1263417747
+      spriteID: 1eba21a1c8b251443ad5a63d9025bddd
+      internalID: 1189870719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_24
+      name: DoomSlayerFusil_25
       rect:
         serializedVersion: 2
         x: 2
         y: 792
         width: 66
         height: 90
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5375d8b54fda1bd4a9dfe3f54a755dd4
-      internalID: -299752837
+      spriteID: 9827b7863729996458f502208c757d23
+      internalID: 558414599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_25
+      name: DoomSlayerFusil_26
       rect:
         serializedVersion: 2
         x: 70
         y: 792
         width: 57
         height: 90
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e76c069360156e64f9be6f67cb5f0557
-      internalID: -187514289
+      spriteID: 9e56a7875c3d82b4091f4ef93eabac75
+      internalID: 450592803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_26
+      name: DoomSlayerFusil_27
       rect:
         serializedVersion: 2
         x: 128
         y: 794
         width: 56
         height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d77d4eb31570284f8ebe86d8d92689b
-      internalID: -1334880070
+      spriteID: 2fa358510d9e9a34497b7407e8ef1af4
+      internalID: -803074304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_27
+      name: DoomSlayerFusil_28
       rect:
         serializedVersion: 2
         x: 186
         y: 794
         width: 65
         height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10788c33e883e1549b24c1fdbc7557a0
-      internalID: -1665624243
+      spriteID: d0eaad3088b9e1b46bd3804b40f29f86
+      internalID: 1236998107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_28
+      name: DoomSlayerFusil_29
       rect:
         serializedVersion: 2
         x: 253
         y: 794
         width: 57
         height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c42ad2d51dc714543ae5f104e14a0dc5
-      internalID: -1415789796
+      spriteID: c7d61fa3e679b03428bbd4d08172c0aa
+      internalID: -1260649280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_29
+      name: DoomSlayerFusil_30
       rect:
         serializedVersion: 2
         x: 319
         y: 780
         width: 56
         height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d0c2de7156da1a488a8724d426b8dac
-      internalID: 1090347357
+      spriteID: 0582b153cbf1d3946b595189efa0b6d8
+      internalID: 257020284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_30
+      name: DoomSlayerFusil_31
       rect:
         serializedVersion: 2
         x: 394
         y: 780
         width: 58
         height: 90
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8bad9903510bf742bfb6190d38d6980
-      internalID: -1677828037
+      spriteID: cd223fef751b8c04ab30a5a2da236220
+      internalID: -1731202964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_31
+      name: DoomSlayerFusil_32
       rect:
         serializedVersion: 2
         x: 476
         y: 781
         width: 61
         height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c5b08bf27464e04db06098b4326a38f
-      internalID: -506228521
+      spriteID: bdc6ad94a7fc31b4ba1d83d21b0830b7
+      internalID: -1335271245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_32
+      name: DoomSlayerFusil_33
       rect:
         serializedVersion: 2
         x: 2
         y: 685
         width: 43
         height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28d90ecf228a852438c5f75f1b73f1c9
-      internalID: 2114530606
+      spriteID: 45c6e79c270b5d447a8898e5160c0458
+      internalID: 981709732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_33
+      name: DoomSlayerFusil_34
       rect:
         serializedVersion: 2
         x: 47
         y: 687
         width: 70
         height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2e6a826a72de9d4b80e71c568f14fca
-      internalID: 917091399
+      spriteID: 488a734339b4c58469b477880eaf63db
+      internalID: 456153449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_34
+      name: DoomSlayerFusil_35
       rect:
         serializedVersion: 2
         x: 119
         y: 690
         width: 83
         height: 86
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df4eaeae1f7a4dd4081a7edd4ac5040d
-      internalID: 2071337676
+      spriteID: e46b2c36c3a9cd341afcd220576abbfe
+      internalID: 179991666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_35
+      name: DoomSlayerFusil_36
       rect:
         serializedVersion: 2
         x: 203
         y: 692
         width: 62
         height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd87cc7f621b9704bafebbec5bb732bf
-      internalID: -847611872
+      spriteID: f388846c93aeaa0458d0075cf8a2736d
+      internalID: -1384838188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_36
+      name: DoomSlayerFusil_37
       rect:
         serializedVersion: 2
         x: 267
         y: 693
         width: 43
         height: 83
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9076fc71037948f458edfacf6484c1ac
-      internalID: -431435662
+      spriteID: bc1050549df7c7a42be9f4905292e785
+      internalID: 1795930009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_37
+      name: DoomSlayerFusil_38
       rect:
         serializedVersion: 2
         x: 315
         y: 685
         width: 65
         height: 86
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c450379301135147ae45fe36c71d0b1
-      internalID: -1250988048
+      spriteID: e3910ad23628cd243af52ef59baba404
+      internalID: -1584145789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_38
+      name: DoomSlayerFusil_39
       rect:
         serializedVersion: 2
         x: 394
         y: 687
         width: 85
         height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dea3db7caccee24d87ed331711f121c
-      internalID: 249000354
+      spriteID: 35a974d0fd1d73348b04ccd5ff80e965
+      internalID: -1698540337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_39
+      name: DoomSlayerFusil_40
       rect:
         serializedVersion: 2
         x: 494
         y: 685
         width: 66
         height: 90
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3df19da9e589d384f9204a0436c1ede4
-      internalID: 421905569
+      spriteID: 000ea9ef16948e04da459a4c2887be6d
+      internalID: 1743086658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_40
+      name: DoomSlayerFusil_41
       rect:
         serializedVersion: 2
         x: 2
         y: 593
         width: 43
         height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c1668b2b4c4d9f4593223093e8c3158
-      internalID: -679025143
+      spriteID: 27e40d8e7594a064586802df584d95d8
+      internalID: 1230340681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_41
+      name: DoomSlayerFusil_42
       rect:
         serializedVersion: 2
         x: 47
         y: 594
         width: 73
         height: 90
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6043ff2740acd344baa3be375894c86
-      internalID: -35628965
+      spriteID: a37d0a0638fd5a04ab2ec5eeae0226e9
+      internalID: -1187222095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_42
+      name: DoomSlayerFusil_43
       rect:
         serializedVersion: 2
         x: 122
         y: 598
         width: 84
         height: 86
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc2d9ba0e4b6f704fa0221f7947ce7af
-      internalID: 1451388685
+      spriteID: 22fc3da50555b4b4aafbdad86c292e02
+      internalID: -72377234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_43
+      name: DoomSlayerFusil_44
       rect:
         serializedVersion: 2
         x: 208
         y: 599
         width: 67
         height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0e2a34be9b01d64a92a856defe6c20c
-      internalID: 499006181
+      spriteID: e2faedb1b63066149856f87a524292f6
+      internalID: 1671762677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_44
+      name: DoomSlayerFusil_45
       rect:
         serializedVersion: 2
         x: 277
         y: 601
         width: 39
         height: 83
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b9f780ab25a99e4a935a46623758184
-      internalID: -1754610505
+      spriteID: 9034d3255e08916448da25f103b6039f
+      internalID: -1953467276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_45
+      name: DoomSlayerFusil_46
       rect:
         serializedVersion: 2
         x: 322
         y: 593
         width: 69
         height: 86
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90bfc56f2fa1d324a82fb204f3d717cd
-      internalID: -1358941534
+      spriteID: c3a3532ac1de51a4090bcf2d7b1aebc7
+      internalID: 453606647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_46
+      name: DoomSlayerFusil_47
       rect:
         serializedVersion: 2
         x: 400
         y: 594
         width: 89
         height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a31cc593d34bf414bbba647c5aa94109
-      internalID: -1817573379
+      spriteID: d4f8ec1719b68bf42bc38a6a42a3a606
+      internalID: 1828738054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_47
+      name: DoomSlayerFusil_48
       rect:
         serializedVersion: 2
         x: 498
         y: 593
         width: 70
         height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea8a380453fa918459eb05e0c3f49c6a
-      internalID: -665611946
+      spriteID: 21ff98427b4383b4d9f3ebcdf6dde2fa
+      internalID: -1990964677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_48
+      name: DoomSlayerFusil_49
       rect:
         serializedVersion: 2
         x: 3
         y: 502
         width: 63
         height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffe8a0634019a2a4884faca5c9527f11
-      internalID: 1110390075
+      spriteID: a5f433f5090084c4a85d11912492b5da
+      internalID: 1010659858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_49
+      name: DoomSlayerFusil_50
       rect:
         serializedVersion: 2
         x: 69
         y: 500
         width: 58
         height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222c681de69e6dd4a902cd4135a1b3a4
-      internalID: -1883094379
+      spriteID: 8a98f9e5aea864a4d8798de8a6333711
+      internalID: -815862047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_50
+      name: DoomSlayerFusil_51
       rect:
         serializedVersion: 2
         x: 128
         y: 502
         width: 70
         height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a6d0fa387cd1d4d9cf8955ebe90f3e
-      internalID: 253079244
+      spriteID: a60beeb1f479c6d4a9bbd213054201fb
+      internalID: 1610436583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_51
+      name: DoomSlayerFusil_52
       rect:
         serializedVersion: 2
         x: 200
         y: 507
         width: 70
         height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af5b2259cd29ee54aa729008beca117e
-      internalID: 1923792103
+      spriteID: 7d86f73529326534aa5f60719c2ba2e7
+      internalID: -1070744566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_52
+      name: DoomSlayerFusil_53
       rect:
         serializedVersion: 2
         x: 272
         y: 504
         width: 56
         height: 87
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ee4637f1f6d0114c92decb14419ed09
-      internalID: -1938257081
+      spriteID: b3c46a2c3c6a563459e33f18dde65e6d
+      internalID: 1848189464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_53
+      name: DoomSlayerFusil_54
       rect:
         serializedVersion: 2
         x: 334
         y: 504
         width: 59
         height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 300e2a95995d0774083d82c47e58ba1d
-      internalID: 509489801
+      spriteID: d30c501684381734687773a2dd569204
+      internalID: -1847699582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_54
+      name: DoomSlayerFusil_55
       rect:
         serializedVersion: 2
         x: 399
         y: 502
         width: 55
         height: 86
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5115411172a959a4d9361f8c5c388cce
-      internalID: 1336342786
+      spriteID: 552b324066b513548ad6b26198d9b39b
+      internalID: -518225906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_55
+      name: DoomSlayerFusil_56
       rect:
         serializedVersion: 2
         x: 470
         y: 504
         width: 73
         height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d17deed1e51efce46b3413f102db536d
-      internalID: 341631817
+      spriteID: 887edb9919f92e54eae73a2a3bb9cc57
+      internalID: -364926020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_56
+      name: DoomSlayerFusil_57
       rect:
         serializedVersion: 2
         x: 2
         y: 417
         width: 72
         height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4e956fd95ca68545a481cf999c8f5a4
-      internalID: 1536508055
+      spriteID: 69b46afe680463a40a979fc602343c79
+      internalID: 162259864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_57
+      name: DoomSlayerFusil_58
       rect:
         serializedVersion: 2
         x: 76
         y: 429
         width: 57
         height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c071a61b82c4124abcff1f2ae6d5332
-      internalID: 1729321990
+      spriteID: e74b9f1daac52b0478d294c9f44fdb98
+      internalID: 1280214480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_58
+      name: DoomSlayerFusil_59
       rect:
         serializedVersion: 2
         x: 135
         y: 424
         width: 59
         height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ea7605176b428d4688987f88fcd63c7
-      internalID: -1037626548
+      spriteID: 4b9d19be3f2a48c4d864b324ef4142d4
+      internalID: 1930395984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_59
+      name: DoomSlayerFusil_60
       rect:
         serializedVersion: 2
         x: 195
         y: 437
         width: 67
         height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89eb1d151af254a46969f3aac8ac5e2c
-      internalID: -1152526277
+      spriteID: 97fe03042ab55b84a8f194627faa44c4
+      internalID: -876483734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_60
+      name: DoomSlayerFusil_61
       rect:
         serializedVersion: 2
         x: 264
         y: 475
         width: 83
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1bc35eb77d739b43bb4e71cc8b983a3
-      internalID: 1080107066
+      spriteID: 9f07ef1356aeefd4db97814c0345bf94
+      internalID: 1306465897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_61
+      name: DoomSlayerFusil_62
       rect:
         serializedVersion: 2
         x: 348
         y: 475
         width: 83
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef736e5c37b8ebe4484aa01e19da29f1
-      internalID: -1543290752
+      spriteID: 68d1481b655716446a180bad3131badf
+      internalID: -1186497387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_62
+      name: DoomSlayerFusil_63
       rect:
         serializedVersion: 2
         x: 433
         y: 475
         width: 83
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a54e28e8dc4b9d41b109d9cefcb8e4e
-      internalID: 2097270590
+      spriteID: 3efbeb78ccb7b454491c2f247dc5452e
+      internalID: -1064982328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_63
+      name: DoomSlayerFusil_64
       rect:
         serializedVersion: 2
         x: 2
         y: 325
         width: 63
         height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f86d7c5e23e52b4dbc825b642eaef41
-      internalID: 1076904604
+      spriteID: 9fa788ac39327614e884bad2f3d3adac
+      internalID: -673839921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_64
+      name: DoomSlayerFusil_65
       rect:
         serializedVersion: 2
         x: 66
         y: 320
         width: 72
         height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3244f3de9c2a19498d8e2aec62fc908
-      internalID: 179885126
+      spriteID: 84142efd0b7361f4e812fcdb7294733e
+      internalID: 1294066201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_65
+      name: DoomSlayerFusil_66
       rect:
         serializedVersion: 2
         x: 140
         y: 323
         width: 78
         height: 93
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89383f7aec1f0d14b84a43640bc4a796
-      internalID: 1815361217
+      spriteID: ef9b4400dcd7cee4d808017ac9227ad0
+      internalID: -1021396186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_66
+      name: DoomSlayerFusil_67
       rect:
         serializedVersion: 2
         x: 219
         y: 331
         width: 86
         height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a457f89ab64630498045bd30d7f3183
-      internalID: 1727400128
+      spriteID: b3946ab7014b7f642b8ea0be4ab5103d
+      internalID: 2103800697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_74
+      name: DoomSlayerFusil_75
       rect:
         serializedVersion: 2
         x: 492
         y: 362
         width: 92
         height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9e01a43f9096f445a68ee3188309df3
-      internalID: -1322631448
+      spriteID: 7b184b3eb916e49498afd8bb5de84dd1
+      internalID: -839732592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_75
+      name: DoomSlayerFusil_76
       rect:
         serializedVersion: 2
         x: 586
         y: 377
         width: 92
         height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38298e97f9481254ea2804ead5bd22eb
-      internalID: 517303843
+      spriteID: 66c21de051a757a4c9821f6211ea169e
+      internalID: 1087027478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_76
+      name: DoomSlayerFusil_77
       rect:
         serializedVersion: 2
         x: 680
         y: 379
         width: 93
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75b1687eed24eb84f81536f501650f53
-      internalID: 2046313654
+      spriteID: bfd4f87c02999474a8d154607b25ebc7
+      internalID: 774048242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_80
+      name: DoomSlayerFusil_81
       rect:
         serializedVersion: 2
-        x: 398
+        x: 397
         y: 350
-        width: 92
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 93
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff6c520af2a7d654bb227b5772b46f28
-      internalID: -362240628
+      spriteID: af5264566f13d8d4d8f5d94760999716
+      internalID: 607861283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_83
+      name: DoomSlayerFusil_84
       rect:
         serializedVersion: 2
         x: 307
         y: 339
         width: 89
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f372110ddc178da409791da19ae89d7a
-      internalID: 1121538775
+      spriteID: b2741009e109ae74f9637ca9b1cc2784
+      internalID: 513379169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_85
+      name: DoomSlayerFusil_86
       rect:
         serializedVersion: 2
         x: 17
         y: 218
         width: 71
         height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf14be17eabaff34b8623d45e4ec718b
-      internalID: -551353840
+      spriteID: ca14f68678229224493a6a42892c91a8
+      internalID: 1378799095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_86
+      name: DoomSlayerFusil_87
       rect:
         serializedVersion: 2
         x: 112
         y: 216
         width: 58
         height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 009556b2bb844d146a4984456db1fdab
-      internalID: -433517613
+      spriteID: db6169e623119464fad86e97a1b2ae40
+      internalID: 2005124634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_87
+      name: DoomSlayerFusil_88
       rect:
         serializedVersion: 2
         x: 200
         y: 218
         width: 62
         height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b19eb7d7e474a84eb33f0e6f0d62d2b
-      internalID: -920033937
+      spriteID: a227cd4e1cf0fc0459b163007dd126df
+      internalID: 1478211773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_88
+      name: DoomSlayerFusil_89
       rect:
         serializedVersion: 2
         x: 353
         y: 216
         width: 69
         height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d91c04b1d1609445982fedc580a0e0b
-      internalID: -2056942203
+      spriteID: b15fb8f64ba9e484cb906d840dfb12ca
+      internalID: 1709900647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_89
+      name: DoomSlayerFusil_90
       rect:
         serializedVersion: 2
         x: 511
         y: 215
         width: 83
         height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2dad820bd919a148ab8e2cabf96087c
-      internalID: 553006923
+      spriteID: 660de6c89a0404d45ac704d6b9d84845
+      internalID: -6298243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_90
+      name: DoomSlayerFusil_91
       rect:
         serializedVersion: 2
         x: 671
         y: 215
         width: 82
         height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1558ed3dddd19e94085848aa34b25057
-      internalID: -272652413
+      spriteID: 3a9ebfc576ad60c41ba7c200223b01a6
+      internalID: 1227131647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_91
+      name: DoomSlayerFusil_92
       rect:
         serializedVersion: 2
         x: 2
         y: 130
         width: 56
         height: 83
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5aed2da53f4db8d4f8cd4e4264fe133a
-      internalID: 944087015
+      spriteID: b797558aeb42b974cab75839ec3b6b37
+      internalID: -81633821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_92
+      name: DoomSlayerFusil_93
       rect:
         serializedVersion: 2
         x: 60
         y: 132
         width: 76
         height: 81
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecbc56f05e11c85438af7e26b842e3ea
-      internalID: -485790865
+      spriteID: 190c54f4734177f46bd60d37957ce5c3
+      internalID: 1882869277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_93
+      name: DoomSlayerFusil_94
       rect:
         serializedVersion: 2
         x: 138
         y: 178
         width: 81
         height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b9502ec0b6588543bcb28623a6ccefd
-      internalID: -232050572
+      spriteID: ec40c003a76a7274c95b63b786de81c5
+      internalID: 879440744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_94
+      name: DoomSlayerFusil_95
       rect:
         serializedVersion: 2
         x: 221
         y: 182
         width: 84
         height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e4bdecb35811384f88408ebebb182a7
-      internalID: -645964870
+      spriteID: 69693be868790ac41b3faf4cb97b1450
+      internalID: 1370597102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_95
+      name: DoomSlayerFusil_96
       rect:
         serializedVersion: 2
         x: 307
         y: 184
         width: 84
         height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abe88e4f0003e1b418b2ae3b5af88dc4
-      internalID: 2095049450
+      spriteID: 278aedea63fe8444d8875370341c4695
+      internalID: 1492129934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_96
+      name: DoomSlayerFusil_97
       rect:
         serializedVersion: 2
         x: 393
         y: 182
         width: 85
         height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88aa7528d7dcc3a4fbf9380197afda08
-      internalID: -1484570961
+      spriteID: 3dce0fe7482df1c4992445b07ef24c70
+      internalID: 2139499089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_97
+      name: DoomSlayerFusil_98
       rect:
         serializedVersion: 2
         x: 479
         y: 184
         width: 86
         height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87c03f9f72398a04c9691d0ced3b67e3
-      internalID: -768565443
+      spriteID: 94695d863b927bc45bca470c23c48831
+      internalID: -68986995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_98
+      name: DoomSlayerFusil_99
       rect:
         serializedVersion: 2
         x: 2
         y: 85
         width: 78
         height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be99c68324c488c4c87db9fda379920f
-      internalID: -2069940421
+      spriteID: 7f23f0e8776e48440b37f6e88e1f3c4b
+      internalID: -1664899292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_99
+      name: DoomSlayerFusil_100
       rect:
         serializedVersion: 2
         x: 82
         y: 94
         width: 85
         height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57cf1c48a29167146b3263e4ae8234cb
-      internalID: -399762177
+      spriteID: 47cf9eb891da49e4a9f71025beff23f4
+      internalID: 163342476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_100
+      name: DoomSlayerFusil_101
       rect:
         serializedVersion: 2
         x: 168
         y: 98
         width: 85
         height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abcb7bce0ba423a468214401cc782222
-      internalID: -722849440
+      spriteID: a4bd69ec1a1859e4f86cc7cb6060f89c
+      internalID: -126228114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_101
+      name: DoomSlayerFusil_102
       rect:
         serializedVersion: 2
         x: 254
         y: 98
         width: 88
         height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f42a0198e91f5dd4cb80fe1b04af0520
-      internalID: 15676993
+      spriteID: 2593bd6a4e91d174981f6efd20215e54
+      internalID: -1180142991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_102
+      name: DoomSlayerFusil_103
       rect:
         serializedVersion: 2
         x: 344
         y: 100
         width: 86
         height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2aad6f2f1344f440aba571f5eb76470
-      internalID: 432531445
+      spriteID: a65efecd2eaf893488a32be8ab7edc36
+      internalID: 2142508242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_103
+      name: DoomSlayerFusil_104
       rect:
         serializedVersion: 2
         x: 2
         y: 2
         width: 72
         height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55560432466c44e47b48205bd4a3e76e
-      internalID: -1427235581
+      spriteID: 765b5bdcd2499a64fb1429c4bd8bf0a1
+      internalID: -1906633482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_104
+      name: DoomSlayerFusil_105
       rect:
         serializedVersion: 2
         x: 76
         y: 14
         width: 57
         height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4177b163f15a65748b94db0ad7100092
-      internalID: -1883307578
+      spriteID: ba4fd4d06df0f144da534e5bcc86ea18
+      internalID: 1439723300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_105
+      name: DoomSlayerFusil_106
       rect:
         serializedVersion: 2
         x: 135
         y: 9
         width: 62
         height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea2bbdc1041e8ad43b0d79b78c82f313
-      internalID: -1446204671
+      spriteID: 4752743beaa1bea4295b3444867058a1
+      internalID: 266596984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_106
+      name: DoomSlayerFusil_107
       rect:
         serializedVersion: 2
         x: 199
         y: 22
         width: 68
         height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a78a3a13965e8544be7b54ba1334273
-      internalID: 2066294128
+      spriteID: 03b9719c1e7c6754aa51107408c9e420
+      internalID: 864396043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_107
+      name: DoomSlayerFusil_108
       rect:
         serializedVersion: 2
         x: 269
         y: 60
         width: 83
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a919757944b6da48a0e3327ad320931
-      internalID: -1509512736
+      spriteID: 7ad2ab91debf58847b3cb3179ab8a9cf
+      internalID: -773052228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_108
+      name: DoomSlayerFusil_109
       rect:
         serializedVersion: 2
         x: 353
         y: 60
         width: 83
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4af3d9682f7ad0c40b84ce3186fefbe1
-      internalID: 11447342
+      spriteID: b776a23c0b640a048a5b67cfe60f8592
+      internalID: 467119873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_109
+      name: DoomSlayerFusil_110
       rect:
         serializedVersion: 2
         x: 438
         y: 60
         width: 83
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b8e1c0156be0e74393068cabce94902
-      internalID: -1041154547
+      spriteID: b9b440526900e7b41b857a4cfffb6771
+      internalID: 419475403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayer_67
+      name: DoomSlayerFusil_68
       rect:
         serializedVersion: 2
-        x: 320
-        y: 397
-        width: 14
-        height: 11
+        x: 47
+        y: 643
+        width: 12
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffccf0066f7891546a3cbaf59e730ad1
-      internalID: 580973470
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_68
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 403
-        width: 5
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e59e0a3d8c52d542b847c6077097212
-      internalID: 1383746978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_69
-      rect:
-        serializedVersion: 2
-        x: 341
-        y: 402
-        width: 15
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c03f6393c54091b4b9889ae99b94c288
-      internalID: -2129711184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_70
-      rect:
-        serializedVersion: 2
-        x: 367
-        y: 390
-        width: 23
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b52805af799f173438fadebacaebf356
-      internalID: 906631821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_71
-      rect:
-        serializedVersion: 2
-        x: 420
-        y: 398
-        width: 5
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba0386b68f08aa64c97f92aba0738608
-      internalID: -905584289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_72
-      rect:
-        serializedVersion: 2
-        x: 431
-        y: 396
-        width: 19
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1566273c0b21ab49bdfbb6c5b37e25b
-      internalID: -2023010374
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_73
-      rect:
-        serializedVersion: 2
-        x: 464
-        y: 390
-        width: 23
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 820b7f736ab6be8469177a2ff9d5de35
-      internalID: -377185668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_77
-      rect:
-        serializedVersion: 2
-        x: 315
-        y: 380
-        width: 21
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ba71241fdb9ded4294a3b166db179e4
-      internalID: 171423132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_78
-      rect:
-        serializedVersion: 2
-        x: 334
-        y: 389
-        width: 24
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0a904b6fa582674cbb608af6761a0d7
-      internalID: 2056534266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_79
-      rect:
-        serializedVersion: 2
-        x: 363
-        y: 387
-        width: 4
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bbd76082d32c60489c1604c402ed6eb
-      internalID: 1654203062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_81
-      rect:
-        serializedVersion: 2
-        x: 411
-        y: 390
-        width: 9
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f5b0f0d9dfb8c94284fda650f31ac1d
-      internalID: 341708405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_82
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 390
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1842a641be3cfd54cb288b4fa142300e
-      internalID: 974839531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_84
-      rect:
-        serializedVersion: 2
-        x: 337
-        y: 373
-        width: 11
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e1f9819870855640979d8d8b8c4d859
-      internalID: 318878334
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoomSlayer_110
-      rect:
-        serializedVersion: 2
-        x: 557
-        y: 642
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5a9ad81b75b8dc43a33f391e9535a4a
-      internalID: -1072346442
+      spriteID: 2e6496130c3ca3c44ba3eba80a5ed7d1
+      internalID: 1333218310
       vertices: []
       indices: 
       edges: []
@@ -2447,117 +2195,117 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DoomSlayer_106: 2066294128
-      DoomSlayer_56: 1536508055
-      DoomSlayer_58: -1037626548
-      DoomSlayer_92: -485790865
-      DoomSlayer_50: 253079244
-      DoomSlayer_66: 1727400128
-      DoomSlayer_90: -272652413
-      DoomSlayer_12: -919832623
-      DoomSlayer_68: 1383746978
-      DoomSlayer_83: 1121538775
-      DoomSlayer_73: -377185668
-      DoomSlayer_41: -35628965
-      DoomSlayer_7: 2037795998
-      DoomSlayer_29: 1090347357
-      DoomSlayer_48: 1110390075
-      DoomSlayer_31: -506228521
-      DoomSlayer_23: 1263417747
-      DoomSlayer_4: -334987573
-      DoomSlayer_95: 2095049450
-      DoomSlayer_61: -1543290752
-      DoomSlayer_110: -1072346442
-      DoomSlayer_36: -431435662
-      DoomSlayer_69: -2129711184
-      DoomSlayer_5: -1507936874
-      DoomSlayer_103: -1427235581
-      DoomSlayer_22: 1445426486
-      DoomSlayer_100: -722849440
-      DoomSlayer_65: 1815361217
-      DoomSlayer_6: -2093599695
-      DoomSlayer_71: -905584289
-      DoomSlayer_63: 1076904604
-      DoomSlayer_107: -1509512736
-      DoomSlayer_54: 1336342786
-      DoomSlayer_18: -1721975210
-      DoomSlayer_20: -1583819736
-      DoomSlayer_44: -1754610505
-      DoomSlayer_108: 11447342
-      DoomSlayer_81: 341708405
-      DoomSlayer_35: -847611872
-      DoomSlayer_34: 2071337676
-      DoomSlayer_15: -2051930490
-      DoomSlayer_19: -1183447082
-      DoomSlayer_89: 553006923
-      DoomSlayer_101: 15676993
-      DoomSlayer_104: -1883307578
-      DoomSlayer_99: -399762177
-      DoomSlayer_62: 2097270590
-      DoomSlayer_3: 1061717325
-      DoomSlayer_38: 249000354
-      DoomSlayer_32: 2114530606
-      DoomSlayer_52: -1938257081
-      DoomSlayer_0: -602893658
-      DoomSlayer_97: -768565443
-      DoomSlayer_109: -1041154547
-      DoomSlayer_102: 432531445
-      DoomSlayer_105: -1446204671
-      DoomSlayer_26: -1334880070
-      DoomSlayer_17: -670260183
-      DoomSlayer_45: -1358941534
-      DoomSlayer_14: -588078991
-      DoomSlayer_57: 1729321990
-      DoomSlayer_67: 580973470
-      DoomSlayer_79: 1654203062
-      DoomSlayer_87: -920033937
-      DoomSlayer_2: 1092246469
-      DoomSlayer_11: -121815565
-      DoomSlayer_53: 509489801
-      DoomSlayer_93: -232050572
-      DoomSlayer_10: -1688018398
-      DoomSlayer_59: -1152526277
-      DoomSlayer_30: -1677828037
-      DoomSlayer_49: -1883094379
-      DoomSlayer_39: 421905569
-      DoomSlayer_28: -1415789796
-      DoomSlayer_51: 1923792103
-      DoomSlayer_74: -1322631448
-      DoomSlayer_60: 1080107066
-      DoomSlayer_72: -2023010374
-      DoomSlayer_80: -362240628
-      DoomSlayer_25: -187514289
-      DoomSlayer_21: -508829168
-      DoomSlayer_70: 906631821
-      DoomSlayer_96: -1484570961
-      DoomSlayer_37: -1250988048
-      DoomSlayer_55: 341631817
-      DoomSlayer_24: -299752837
-      DoomSlayer_78: 2056534266
-      DoomSlayer_8: 180685855
-      DoomSlayer_75: 517303843
-      DoomSlayer_86: -433517613
-      DoomSlayer_77: 171423132
-      DoomSlayer_16: 462069839
-      DoomSlayer_33: 917091399
-      DoomSlayer_98: -2069940421
-      DoomSlayer_84: 318878334
-      DoomSlayer_91: 944087015
-      DoomSlayer_27: -1665624243
-      DoomSlayer_82: 974839531
-      DoomSlayer_76: 2046313654
-      DoomSlayer_94: -645964870
-      DoomSlayer_42: 1451388685
-      DoomSlayer_88: -2056942203
-      DoomSlayer_64: 179885126
-      DoomSlayer_13: -550402642
-      DoomSlayer_40: -679025143
-      DoomSlayer_1: -2134262372
-      DoomSlayer_85: -551353840
-      DoomSlayer_43: 499006181
-      DoomSlayer_46: -1817573379
-      DoomSlayer_9: 1135293599
-      DoomSlayer_47: -665611946
+      DoomSlayerFusil_30: 257020284
+      DoomSlayerFusil_59: 1930395984
+      DoomSlayerFusil_83: 1825256902
+      DoomSlayerFusil_90: -6298243
+      DoomSlayerFusil_97: 2139499089
+      DoomSlayerFusil_51: 1610436583
+      DoomSlayerFusil_25: 558414599
+      DoomSlayerFusil_77: 774048242
+      DoomSlayerFusil_13: -1486131606
+      DoomSlayerFusil_52: -1070744566
+      DoomSlayerFusil_54: -1847699582
+      DoomSlayerFusil_108: -773052228
+      DoomSlayerFusil_22: 1738087840
+      DoomSlayerFusil_47: 1828738054
+      DoomSlayerFusil_37: 1795930009
+      DoomSlayerFusil_64: -673839921
+      DoomSlayerFusil_18: -1806448611
+      DoomSlayerFusil_24: 1189870719
+      DoomSlayerFusil_14: -953125186
+      DoomSlayerFusil_67: 2103800697
+      DoomSlayerFusil_60: -876483734
+      DoomSlayerFusil_92: -81633821
+      DoomSlayerFusil_0: 1247646704
+      DoomSlayerFusil_105: 1439723300
+      DoomSlayerFusil_95: 1370597102
+      DoomSlayerFusil_79: 1000207368
+      DoomSlayerFusil_10: -1022373068
+      DoomSlayerFusil_74: -587269201
+      DoomSlayerFusil_96: 1492129934
+      DoomSlayerFusil_7: -1553251132
+      DoomSlayerFusil_58: 1280214480
+      DoomSlayerFusil_80: -1405513237
+      DoomSlayerFusil_17: -1721907617
+      DoomSlayerFusil_85: 1484446890
+      DoomSlayerFusil_34: 456153449
+      DoomSlayerFusil_61: 1306465897
+      DoomSlayerFusil_109: 467119873
+      DoomSlayerFusil_68: 1333218310
+      DoomSlayerFusil_31: -1731202964
+      DoomSlayerFusil_36: -1384838188
+      DoomSlayerFusil_44: 1671762677
+      DoomSlayerFusil_70: -1589278694
+      DoomSlayerFusil_75: -839732592
+      DoomSlayerFusil_99: -1664899292
+      DoomSlayerFusil_78: 874824699
+      DoomSlayerFusil_32: -1335271245
+      DoomSlayerFusil_100: 163342476
+      DoomSlayerFusil_62: -1186497387
+      DoomSlayerFusil_4: 1447226085
+      DoomSlayerFusil_93: 1882869277
+      DoomSlayerFusil_103: 2142508242
+      DoomSlayerFusil_82: 1473849267
+      DoomSlayerFusil_71: 1948242261
+      DoomSlayerFusil_72: 829908875
+      DoomSlayerFusil_101: -126228114
+      DoomSlayerFusil_73: -23497711
+      DoomSlayerFusil_102: -1180142991
+      DoomSlayerFusil_11: -755267441
+      DoomSlayerFusil_39: -1698540337
+      DoomSlayerFusil_106: 266596984
+      DoomSlayerFusil_63: -1064982328
+      DoomSlayerFusil_57: 162259864
+      DoomSlayerFusil_40: 1743086658
+      DoomSlayerFusil_50: -815862047
+      DoomSlayerFusil_88: 1478211773
+      DoomSlayerFusil_23: 1655817479
+      DoomSlayerFusil_2: -1101635069
+      DoomSlayerFusil_21: -288648109
+      DoomSlayerFusil_45: -1953467276
+      DoomSlayerFusil_104: -1906633482
+      DoomSlayerFusil_29: -1260649280
+      DoomSlayerFusil_98: -68986995
+      DoomSlayerFusil_110: 419475403
+      DoomSlayerFusil_8: 728467284
+      DoomSlayerFusil_38: -1584145789
+      DoomSlayerFusil_42: -1187222095
+      DoomSlayerFusil_56: -364926020
+      DoomSlayerFusil_66: -1021396186
+      DoomSlayerFusil_49: 1010659858
+      DoomSlayerFusil_69: -1473139909
+      DoomSlayerFusil_76: 1087027478
+      DoomSlayerFusil_41: 1230340681
+      DoomSlayerFusil_27: -803074304
+      DoomSlayerFusil_55: -518225906
+      DoomSlayerFusil_16: -1580174174
+      DoomSlayerFusil_46: 453606647
+      DoomSlayerFusil_89: 1709900647
+      DoomSlayerFusil_3: -302906364
+      DoomSlayerFusil_9: 1378507396
+      DoomSlayerFusil_53: 1848189464
+      DoomSlayerFusil_15: 476912994
+      DoomSlayerFusil_6: -2100800641
+      DoomSlayerFusil_26: 450592803
+      DoomSlayerFusil_86: 1378799095
+      DoomSlayerFusil_28: 1236998107
+      DoomSlayerFusil_81: 607861283
+      DoomSlayerFusil_12: 506237633
+      DoomSlayerFusil_5: 405508762
+      DoomSlayerFusil_107: 864396043
+      DoomSlayerFusil_20: -1856225660
+      DoomSlayerFusil_1: 1309934632
+      DoomSlayerFusil_35: 179991666
+      DoomSlayerFusil_33: 981709732
+      DoomSlayerFusil_87: 2005124634
+      DoomSlayerFusil_48: -1990964677
+      DoomSlayerFusil_43: -72377234
+      DoomSlayerFusil_91: 1227131647
+      DoomSlayerFusil_19: 1081220363
+      DoomSlayerFusil_65: 1294066201
+      DoomSlayerFusil_94: 879440744
+      DoomSlayerFusil_84: 513379169
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

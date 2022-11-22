@@ -120,8 +120,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cf7b8b256bd45f4f8112967020108c1
-      internalID: 222345983
+      spriteID: 49e4fc6019510f04cbdfc4c24bcdfab1
+      internalID: -83957635
       vertices: []
       indices: 
       edges: []
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00f77edfcfd668f41a860eb34968d5c2
-      internalID: 125615005
+      spriteID: b3230b9f5c374c9408b3dd092010d96f
+      internalID: 10205512
       vertices: []
       indices: 
       edges: []
@@ -162,8 +162,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 687dc33c4e1403743a34ed319f5c5b5c
-      internalID: 40790772
+      spriteID: d883ad6278ef86244a0456f78fca0fa2
+      internalID: 255349426
       vertices: []
       indices: 
       edges: []
@@ -183,14 +183,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c57ff6c30200594a8e6a84c4f175b97
-      internalID: 201729661
+      spriteID: e129e8b0d84a38142a4e0af5a7c24283
+      internalID: 1657478451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: DoomSlayerShotgun70x86_4
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1117
+        width: 80
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb24782d865f7242b0cc4f474d29e0f
+      internalID: -315829274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoomSlayerShotgun70x86_5
       rect:
         serializedVersion: 2
         x: 2
@@ -204,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a373cac11daabca48a93c2215ff8f2fc
-      internalID: -126530474
+      spriteID: 6698a41b5c14338459214d6fba4dfc78
+      internalID: -1493048551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_5
+      name: DoomSlayerShotgun70x86_6
       rect:
         serializedVersion: 2
         x: 97
@@ -225,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14316e7942d266947b5aed8311761f4d
-      internalID: -1159864469
+      spriteID: b107517fac1d3024c91895f193ca46be
+      internalID: 515810576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_6
+      name: DoomSlayerShotgun70x86_7
       rect:
         serializedVersion: 2
         x: 3
@@ -246,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 227b35fa2aeaed9468b8a89bd0a0a77a
-      internalID: -1575792213
+      spriteID: facdf41a2f6b8bc498e485ce99b0be92
+      internalID: 485365469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_7
+      name: DoomSlayerShotgun70x86_8
       rect:
         serializedVersion: 2
         x: 5
@@ -267,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f817106fac488e6439ce9794f98356fc
-      internalID: -61199951
+      spriteID: 6da3322af3a1bea4785f5faea6681e4d
+      internalID: -1838032888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_8
+      name: DoomSlayerShotgun70x86_9
       rect:
         serializedVersion: 2
         x: 79
@@ -288,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eec4bd50d892a3247878ee730f4041ee
-      internalID: 1654550792
+      spriteID: 4b5f315c45dfcb3448d1b005080db046
+      internalID: 1453696804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_9
+      name: DoomSlayerShotgun70x86_10
       rect:
         serializedVersion: 2
         x: 138
@@ -309,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33d534ebbec6845409c61003cdbe0b3e
-      internalID: 1574070128
+      spriteID: 00db362a0aac7044e823acf17a3d674a
+      internalID: -2110663311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_10
+      name: DoomSlayerShotgun70x86_11
       rect:
         serializedVersion: 2
         x: 198
@@ -330,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50ed87f73aa9b5744bdb7634d271743b
-      internalID: 1035844827
+      spriteID: dcd5ec23e94667847bb9c6dc67962746
+      internalID: 1660660602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_11
+      name: DoomSlayerShotgun70x86_12
       rect:
         serializedVersion: 2
         x: 267
@@ -351,14 +372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e68ed7d1cc0a5c47b140c45bc90695c
-      internalID: -719106038
+      spriteID: a1fad1801b97a3346b8ab2c6b6fef8e3
+      internalID: -1525234922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_12
+      name: DoomSlayerShotgun70x86_13
       rect:
         serializedVersion: 2
         x: 351
@@ -372,14 +393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e07022c6c24d8ee49a9ef55e57cb3145
-      internalID: 300011978
+      spriteID: 921bd6910e740204a97df9d6139f0ec8
+      internalID: 896944734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_13
+      name: DoomSlayerShotgun70x86_14
       rect:
         serializedVersion: 2
         x: 436
@@ -393,14 +414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63f3c996061176c48b55edaf99b61539
-      internalID: -1395946369
+      spriteID: a39806d68ed8fad4b8df3537a2f4f63a
+      internalID: -1458317905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_14
+      name: DoomSlayerShotgun70x86_15
       rect:
         serializedVersion: 2
         x: 1
@@ -414,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 647c1a70c1895be40bae2368bea315ff
-      internalID: -589897735
+      spriteID: 2e58e4c28aa1471459158f16349afc2f
+      internalID: -994155024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_15
+      name: DoomSlayerShotgun70x86_16
       rect:
         serializedVersion: 2
         x: 65
@@ -435,14 +456,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffd5694748a551a4e873c7f6058288b5
-      internalID: -1559171055
+      spriteID: 12379f04fc8390747a588e7550236abf
+      internalID: -73273924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_16
+      name: DoomSlayerShotgun70x86_17
       rect:
         serializedVersion: 2
         x: 139
@@ -456,14 +477,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b88633fb504a9984e81a042f98470514
-      internalID: -652293739
+      spriteID: 72f16713775c40f49aeaf12442425e2f
+      internalID: -1279336427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_17
+      name: DoomSlayerShotgun70x86_18
       rect:
         serializedVersion: 2
         x: 218
@@ -477,14 +498,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 292e9f18edd37294282832e9434f91e0
-      internalID: 603634522
+      spriteID: dcb344b086c15334f9c695a7814640c6
+      internalID: -989203854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_25
+      name: DoomSlayerShotgun70x86_26
       rect:
         serializedVersion: 2
         x: 491
@@ -498,14 +519,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d0b11a190b39a44395b648230b49442
-      internalID: -98491051
+      spriteID: e4793fa3063ef6645a33b42eaca2eb48
+      internalID: 1691947189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_26
+      name: DoomSlayerShotgun70x86_27
       rect:
         serializedVersion: 2
         x: 585
@@ -519,14 +540,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cf84ce3ebfe0d24f94d5fb2ccd163f5
-      internalID: 202384623
+      spriteID: c5e171b9198b3a94690df72742cd3e9c
+      internalID: -1361083033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_27
+      name: DoomSlayerShotgun70x86_28
       rect:
         serializedVersion: 2
         x: 679
@@ -540,20 +561,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37941e9cd83f7ae4b816e3cdc33ee9d2
-      internalID: 613145465
+      spriteID: 3d0486802f184a14e9db298b92dc3820
+      internalID: -99694790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_31
+      name: DoomSlayerShotgun70x86_32
       rect:
         serializedVersion: 2
-        x: 396
+        x: 397
         y: 747
-        width: 93
-        height: 65
+        width: 92
+        height: 66
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -561,14 +582,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e83307c87adbcab4b85680108515572a
-      internalID: 194727174
+      spriteID: f69ab9af2cf51484b9c36272afd50418
+      internalID: 1875779844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_34
+      name: DoomSlayerShotgun70x86_35
       rect:
         serializedVersion: 2
         x: 306
@@ -582,14 +603,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c17e3c590bfc8114da1b23a7862295ad
-      internalID: 99566949
+      spriteID: 1bf4c9ad8a5fe6d4090a4148eeca4d37
+      internalID: -507608669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_36
+      name: DoomSlayerShotgun70x86_37
       rect:
         serializedVersion: 2
         x: 1
@@ -603,14 +624,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dcbaeb0d2d435d48ac10f8235649f99
-      internalID: 804539361
+      spriteID: d71312529e2ffb64c955dbf2261521fe
+      internalID: 1275762078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_37
+      name: DoomSlayerShotgun70x86_38
       rect:
         serializedVersion: 2
         x: 75
@@ -624,14 +645,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ced656bdc08e96344918f3bb5d9c7f66
-      internalID: -1329662847
+      spriteID: 5b04226cd60e5564699683c88acfae60
+      internalID: -236394278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_38
+      name: DoomSlayerShotgun70x86_39
       rect:
         serializedVersion: 2
         x: 134
@@ -645,14 +666,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a77ffdffc773e347ab9d7b43ce3ec50
-      internalID: 1104171511
+      spriteID: 071dd6466f2029f45a198e4adc4b8309
+      internalID: 2026747746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_39
+      name: DoomSlayerShotgun70x86_40
       rect:
         serializedVersion: 2
         x: 198
@@ -666,14 +687,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2356c30a73f6cfe448638b3403a183b2
-      internalID: -1233109687
+      spriteID: 682e2bcfbc3637146897acdcc621d201
+      internalID: -609457033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_40
+      name: DoomSlayerShotgun70x86_41
       rect:
         serializedVersion: 2
         x: 268
@@ -687,14 +708,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97eedded6a39d9745aae7c9ddbda869b
-      internalID: 805145255
+      spriteID: 4ebc7137cae7a9949927986f1babdc0a
+      internalID: 1697788028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_41
+      name: DoomSlayerShotgun70x86_42
       rect:
         serializedVersion: 2
         x: 352
@@ -708,14 +729,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 069ca65d2f35a2d4baaffe995af74cc9
-      internalID: 1748103272
+      spriteID: 88d12eb66897e5349b1b013b3a47d700
+      internalID: 1105231168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoomSlayerShotgun70x86_42
+      name: DoomSlayerShotgun70x86_43
       rect:
         serializedVersion: 2
         x: 437
@@ -729,8 +750,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dfde831acd4bbb40b7895ef5d7a7574
-      internalID: 1724083274
+      spriteID: ca83fb6bdb1e77647b9001d2b323dc58
+      internalID: -1129433911
       vertices: []
       indices: 
       edges: []
@@ -746,49 +767,50 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DoomSlayerShotgun70x86_32: -1683098746
-      DoomSlayerShotgun70x86_14: -589897735
-      DoomSlayerShotgun70x86_13: -1395946369
-      DoomSlayerShotgun70x86_26: 202384623
-      DoomSlayerShotgun70x86_35: -653277548
-      DoomSlayerShotgun70x86_36: 804539361
-      DoomSlayerShotgun70x86_11: -719106038
-      DoomSlayerShotgun70x86_21: -1251172990
-      DoomSlayerShotgun70x86_34: 99566949
-      DoomSlayerShotgun70x86_30: 635507478
-      DoomSlayerShotgun70x86_41: 1748103272
-      DoomSlayerShotgun70x86_19: 2039243649
-      DoomSlayerShotgun70x86_42: 1724083274
-      DoomSlayerShotgun70x86_22: -1409358554
-      DoomSlayerShotgun70x86_20: 1199893473
-      DoomSlayerShotgun70x86_40: 805145255
-      DoomSlayerShotgun70x86_23: 735709392
-      DoomSlayerShotgun70x86_4: -126530474
-      DoomSlayerShotgun70x86_12: 300011978
-      DoomSlayerShotgun70x86_38: 1104171511
-      DoomSlayerShotgun70x86_1: 125615005
-      DoomSlayerShotgun70x86_9: 1574070128
-      DoomSlayerShotgun70x86_17: 603634522
-      DoomSlayerShotgun70x86_24: 1962315695
-      DoomSlayerShotgun70x86_0: 222345983
-      DoomSlayerShotgun70x86_25: -98491051
-      DoomSlayerShotgun70x86_37: -1329662847
-      DoomSlayerShotgun70x86_16: -652293739
-      DoomSlayerShotgun70x86_7: -61199951
-      DoomSlayerShotgun70x86_28: 396710792
-      DoomSlayerShotgun70x86_39: -1233109687
-      DoomSlayerShotgun70x86_27: 613145465
-      DoomSlayerShotgun70x86_10: 1035844827
-      DoomSlayerShotgun70x86_5: -1159864469
-      DoomSlayerShotgun70x86_29: 1444564442
-      DoomSlayerShotgun70x86_8: 1654550792
-      DoomSlayerShotgun70x86_15: -1559171055
-      DoomSlayerShotgun70x86_18: 1266198791
-      DoomSlayerShotgun70x86_2: 40790772
-      DoomSlayerShotgun70x86_31: 194727174
-      DoomSlayerShotgun70x86_33: -1966280852
-      DoomSlayerShotgun70x86_6: -1575792213
-      DoomSlayerShotgun70x86_3: 201729661
+      DoomSlayerShotgun70x86_32: 1875779844
+      DoomSlayerShotgun70x86_14: -1458317905
+      DoomSlayerShotgun70x86_13: 896944734
+      DoomSlayerShotgun70x86_26: 1691947189
+      DoomSlayerShotgun70x86_35: -507608669
+      DoomSlayerShotgun70x86_36: 1627746193
+      DoomSlayerShotgun70x86_11: 1660660602
+      DoomSlayerShotgun70x86_21: 760059135
+      DoomSlayerShotgun70x86_34: -140458375
+      DoomSlayerShotgun70x86_30: 501405633
+      DoomSlayerShotgun70x86_41: 1697788028
+      DoomSlayerShotgun70x86_19: -1474032964
+      DoomSlayerShotgun70x86_42: 1105231168
+      DoomSlayerShotgun70x86_43: -1129433911
+      DoomSlayerShotgun70x86_22: 1592402427
+      DoomSlayerShotgun70x86_20: 1041490782
+      DoomSlayerShotgun70x86_40: -609457033
+      DoomSlayerShotgun70x86_23: -710065319
+      DoomSlayerShotgun70x86_4: -315829274
+      DoomSlayerShotgun70x86_12: -1525234922
+      DoomSlayerShotgun70x86_38: -236394278
+      DoomSlayerShotgun70x86_1: 10205512
+      DoomSlayerShotgun70x86_9: 1453696804
+      DoomSlayerShotgun70x86_17: -1279336427
+      DoomSlayerShotgun70x86_24: 521100912
+      DoomSlayerShotgun70x86_0: -83957635
+      DoomSlayerShotgun70x86_25: -1121735801
+      DoomSlayerShotgun70x86_37: 1275762078
+      DoomSlayerShotgun70x86_16: -73273924
+      DoomSlayerShotgun70x86_7: 485365469
+      DoomSlayerShotgun70x86_28: -99694790
+      DoomSlayerShotgun70x86_39: 2026747746
+      DoomSlayerShotgun70x86_27: -1361083033
+      DoomSlayerShotgun70x86_10: -2110663311
+      DoomSlayerShotgun70x86_5: -1493048551
+      DoomSlayerShotgun70x86_29: 694619226
+      DoomSlayerShotgun70x86_8: -1838032888
+      DoomSlayerShotgun70x86_15: -994155024
+      DoomSlayerShotgun70x86_18: -989203854
+      DoomSlayerShotgun70x86_2: 255349426
+      DoomSlayerShotgun70x86_31: 1577527497
+      DoomSlayerShotgun70x86_33: -465741629
+      DoomSlayerShotgun70x86_6: 515810576
+      DoomSlayerShotgun70x86_3: 1657478451
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
