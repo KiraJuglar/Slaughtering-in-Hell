@@ -1,0 +1,1215 @@
+fileFormatVersion: 2
+guid: e0452ffc6ff68ff408e4115c830166ab
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SargentShotgun_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 262
+        width: 36
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cf80c236589b84b8055340e41b9113
+      internalID: 791408470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 263
+        width: 32
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722fd1508b098394e9654f28d0681d27
+      internalID: -972205528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 264
+        width: 40
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e016cad3b71a4f84cbafa53a38b47891
+      internalID: 1269932626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 267
+        width: 45
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178d79cff6afa8b449003e7c3feb32dc
+      internalID: 1598472277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_4
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 266
+        width: 35
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e0ce2fb377f334d9472ae3258f466a
+      internalID: -82781727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 262
+        width: 35
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3417573a26271074fb4052506bc77d00
+      internalID: -697995952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_6
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 263
+        width: 27
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f187a9e43d7b0d546a988cb3a6540c68
+      internalID: -2054067644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 261
+        width: 32
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72dbf124d5b818e448bf86af98f35ba7
+      internalID: -651862805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_8
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 263
+        width: 40
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec9cb26e1d161749a47caaa2fd7cbe8
+      internalID: 763367133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_9
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 263
+        width: 34
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c9ad54f1f559b4c936ef6b1a57da9c
+      internalID: -1623669238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_10
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 262
+        width: 32
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2da28823608ba43a45709485ed31f2
+      internalID: -1622818960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_11
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 263
+        width: 29
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0943ab961e2ef5941829211148dc9948
+      internalID: -2116566456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 38
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2b5cb78ecccef4396b5f74ff4a418e
+      internalID: 1123365634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_13
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 199
+        width: 39
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37abc3e91a6c5b4aaa7c25dcb4469b0
+      internalID: 814643358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_14
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 200
+        width: 34
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c851003bbacc543bbc80b85e61886d
+      internalID: -1170375761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 200
+        width: 34
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e8c833baadda748b305accffdb63ab
+      internalID: 839792394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_16
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 200
+        width: 28
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c640919b894504fbdfd71105368990
+      internalID: 1205242912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_17
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 200
+        width: 30
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578b1ec5e3ef0234b8e03cddc81a3938
+      internalID: 1116864228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_18
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 200
+        width: 38
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17de0da1339fd41429b80b1bd6b36c83
+      internalID: 1543223225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_19
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 200
+        width: 35
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6f06ddc11ab534db4b290992e9ca2d
+      internalID: 1425911898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_20
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 200
+        width: 26
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd7f8e9af20b244fb29c8da9c4de7dc
+      internalID: -1281192462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_21
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 200
+        width: 39
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2d2219a93f06a49bf83887a864acd1
+      internalID: -1541887055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_22
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 201
+        width: 44
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f39454b88fc802408e3ba327a2cd0af
+      internalID: -1625949604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_23
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 201
+        width: 34
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b752b46a73bb84a4098ac75a619f7818
+      internalID: 701171982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 26
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf42e5677587cd4084c3048983c9cf7
+      internalID: 278961094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_25
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 137
+        width: 27
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5b2d2a1b559144ebe30fe86912dc08
+      internalID: 550209575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_26
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 137
+        width: 43
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1180dc02d2280fa4ab9b38abf6406a78
+      internalID: -908126227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_27
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 137
+        width: 49
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a615ad9b7cabe408f62d472fbe3030
+      internalID: -873747027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_28
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 137
+        width: 41
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390067293aab2bd4893f056377621032
+      internalID: -1435361445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_29
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 137
+        width: 24
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39776f1d69c39904b967e18b5bf3156c
+      internalID: -1069841205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_30
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 136
+        width: 31
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22f96a6a07c89c42987ef1993dbf58a
+      internalID: 1181561762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_31
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 137
+        width: 33
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4635226066a62041bdb6b92c1ee5898
+      internalID: -434944621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_32
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 137
+        width: 43
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cdec49fc96a5e4aa97fcef2e3f2b38
+      internalID: -43081370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_33
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 137
+        width: 43
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f232ba76c5e934e9457a9900beef8c
+      internalID: 118369996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_34
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 137
+        width: 31
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37e52066849c0246a4d5ba646a5f886
+      internalID: -581076162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_35
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 131
+        width: 33
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6d5675ff1b917468f8aeccbb010ba9
+      internalID: 1048466751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83
+        width: 35
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60633a56fc556048b1afd7657356449
+      internalID: -832456953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_37
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 84
+        width: 42
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c1e70b64356da48a58258269562bc1
+      internalID: 1600856975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_38
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 71
+        width: 36
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a34407f9f272e4b91293208a567bb0
+      internalID: -190109076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_39
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 70
+        width: 43
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64aad60252ff864dbb1aafc41ad636d
+      internalID: 803855137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_40
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 70
+        width: 48
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856162fb658d28447b575146c943d8f9
+      internalID: 1520787569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_47
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 83
+        width: 48
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c464ad925c52a8e4b939e782178ad644
+      internalID: 546718903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_48
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 65
+        width: 53
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e630266994cbe49839efd090a738ca
+      internalID: -698830537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_52
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 84
+        width: 52
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eee4f97fc9c1764cac2fe430db9cb94
+      internalID: -1638653027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_53
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 65
+        width: 55
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c28deae4ab5314da898be23a123390
+      internalID: 264209629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_59
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 11
+        width: 57
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450abf63a780b7947a99ba25354906af
+      internalID: -1642810530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 57
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f47a748ea89fb4c97f1212455456c5
+      internalID: 1008749501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_61
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 11
+        width: 57
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1aab2d7f1fb25240aacfc58ca607de4
+      internalID: 1473574681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SargentShotgun_62
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 11
+        width: 57
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a284d18e8114f514690e5976a59f3277
+      internalID: 1010291022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SargentShotgun_27: -873747027
+      SargentShotgun_40: 1520787569
+      SargentShotgun_15: 839792394
+      SargentShotgun_59: -1642810530
+      SargentShotgun_10: -1622818960
+      SargentShotgun_32: -43081370
+      SargentShotgun_43: 747597267
+      SargentShotgun_49: 884247333
+      SargentShotgun_11: -2116566456
+      SargentShotgun_45: -1294893580
+      SargentShotgun_42: -1577642385
+      SargentShotgun_9: -1623669238
+      SargentShotgun_13: 814643358
+      SargentShotgun_12: 1123365634
+      SargentShotgun_16: 1205242912
+      SargentShotgun_34: -581076162
+      SargentShotgun_33: 118369996
+      SargentShotgun_38: -190109076
+      SargentShotgun_54: 492107421
+      SargentShotgun_20: -1281192462
+      SargentShotgun_58: -1584390886
+      SargentShotgun_18: 1543223225
+      SargentShotgun_3: 1598472277
+      SargentShotgun_17: 1116864228
+      SargentShotgun_50: 746259694
+      SargentShotgun_37: 1600856975
+      SargentShotgun_41: 953071346
+      SargentShotgun_60: 1008749501
+      SargentShotgun_7: -651862805
+      SargentShotgun_46: -162998768
+      SargentShotgun_23: 701171982
+      SargentShotgun_39: 803855137
+      SargentShotgun_21: -1541887055
+      SargentShotgun_61: 1473574681
+      SargentShotgun_51: -1302076651
+      SargentShotgun_30: 1181561762
+      SargentShotgun_52: -1638653027
+      SargentShotgun_56: -1486283025
+      SargentShotgun_28: -1435361445
+      SargentShotgun_8: 763367133
+      SargentShotgun_26: -908126227
+      SargentShotgun_22: -1625949604
+      SargentShotgun_36: -832456953
+      SargentShotgun_0: 791408470
+      SargentShotgun_25: 550209575
+      SargentShotgun_47: 546718903
+      SargentShotgun_31: -434944621
+      SargentShotgun_19: 1425911898
+      SargentShotgun_35: 1048466751
+      SargentShotgun_14: -1170375761
+      SargentShotgun_57: -626226603
+      SargentShotgun_5: -697995952
+      SargentShotgun_4: -82781727
+      SargentShotgun_6: -2054067644
+      SargentShotgun_55: 1528477368
+      SargentShotgun_62: 1010291022
+      SargentShotgun_1: -972205528
+      SargentShotgun_24: 278961094
+      SargentShotgun_48: -698830537
+      SargentShotgun_2: 1269932626
+      SargentShotgun_44: -1705559225
+      SargentShotgun_53: 264209629
+      SargentShotgun_29: -1069841205
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
-        anim.SetBool("run", horizontalInput != 0);
+        //anim.SetBool("run", horizontalInput != 0);
     }
 
     #endregion
