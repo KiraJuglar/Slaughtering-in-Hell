@@ -27,12 +27,13 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     private Animator anim;
+    private bool grounded; // Validamos si el jugador tocó el suelo
 
     # region Brinco
     [SerializeField] private bool jumpRequest = false;
     [SerializeField] private int maxJumps = 2, availableJumps = 0;
     #endregion
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -51,8 +52,8 @@ public class PlayerController : MonoBehaviour
             availableJumps--;
             jumpRequest = false;
         }
-        
-        
+
+
     }
 
     // Update is called once per frame
@@ -75,14 +76,16 @@ public class PlayerController : MonoBehaviour
             Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
             GameObject newBullet = Instantiate(bullet, transform.position, rotationTarget);
         }
-
         #endregion
+        anim.SetBool("grounded", grounded);
     }
 
     #region M�todos de movimiento del jugador
     void Jump()
     {
         jumpRequest = true;
+        grounded = false;
+        anim.SetTrigger("jump");
     }
 
     void Move()
@@ -97,7 +100,8 @@ public class PlayerController : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().flipX = false;
         }
-        //anim.SetBool("run", horizontalInput != 0);
+        anim.SetBool("run", horizontalInput != 0);
+
     }
 
     #endregion
@@ -107,22 +111,25 @@ public class PlayerController : MonoBehaviour
     {
         if (healthPoints + points <= 0)
             //Die();
-        if (healthPoints + points <= MAX_HEALTH)
-        {
-            healthPoints += points;
-        }
-        else
-        {
-            healthPoints = MAX_HEALTH;
-        }
+            if (healthPoints + points <= MAX_HEALTH)
+            {
+                healthPoints += points;
+            }
+            else
+            {
+                healthPoints = MAX_HEALTH;
+            }
     }
     #endregion
 
+    #region Métodos para la colisión con el suelo del jugador
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground"))
         {
             availableJumps = maxJumps;
+            grounded = true;
         }
     }
+    #endregion
 }

@@ -138,7 +138,7 @@ Animator:
   m_GameObject: {fileID: 36575561}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0d0a50d4817ed7a45822f2dbb6e9e438, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -512,15 +512,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1575776936, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
       propertyPath: m_Size.y
-      value: 1.1764314
+      value: 0.93
       objectReference: {fileID: 0}
     - target: {fileID: 1575776936, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
       propertyPath: m_Offset.x
-      value: -0.14
+      value: -0.17
       objectReference: {fileID: 0}
     - target: {fileID: 1575776936, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
       propertyPath: m_Offset.y
-      value: 0.11
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 4304540308131046905, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
       propertyPath: m_Constraints
