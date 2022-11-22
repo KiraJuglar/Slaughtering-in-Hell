@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 4304540308131046905}
   - component: {fileID: 1575776936}
   - component: {fileID: 8236076868534688488}
-  - component: {fileID: 989362795}
+  - component: {fileID: 36575573}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -120,7 +120,7 @@ Transform:
   - {fileID: 519420032}
   - {fileID: 184966117060048231}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4825933608273202507
 MonoBehaviour:
@@ -176,8 +176,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.12730375, y: -0.005189538}
-  m_Size: {x: 0.44129127, y: 0.87912583}
+  m_Offset: {x: -0.14, y: 0.11}
+  m_Size: {x: 0.58821565, y: 1.1764314}
   m_Direction: 0
 --- !u!212 &8236076868534688488
 SpriteRenderer:
@@ -220,7 +220,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2071337676, guid: 2c26504e5ec58914fb0b54eba201a55e, type: 3}
+  m_Sprite: {fileID: 917091399, guid: 2c26504e5ec58914fb0b54eba201a55e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -231,7 +231,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &989362795
+--- !u!95 &36575573
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
