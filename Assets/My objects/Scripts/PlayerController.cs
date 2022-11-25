@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     private Animator anim;
+    private bool grounded; // Validamos si el jugador tocó el suelo
 
     # region Brinco
     [SerializeField] private bool jumpRequest = false;
@@ -75,14 +76,16 @@ public class PlayerController : MonoBehaviour
             Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
             GameObject newBullet = Instantiate(bullet, transform.position, rotationTarget);
         }
-
         #endregion
+        anim.SetBool("grounded", grounded);
     }
 
     #region M�todos de movimiento del jugador
     void Jump()
     {
         jumpRequest = true;
+        grounded = false;
+        anim.SetTrigger("jump");
     }
 
     void Move()
@@ -98,6 +101,7 @@ public class PlayerController : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = false;
         }
         anim.SetBool("run", horizontalInput != 0);
+
     }
 
     #endregion
@@ -118,11 +122,14 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
+    #region Métodos para la colisión con el suelo del jugador
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Ground"))
         {
             availableJumps = maxJumps;
+            grounded = true;
         }
     }
+    #endregion
 }
