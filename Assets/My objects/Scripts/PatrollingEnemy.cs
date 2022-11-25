@@ -20,16 +20,19 @@ public class PatrollingEnemy : Enemy
 
     private void FixedUpdate()
     {
+
+        EnemyDirection();
+
         if(!playerDetected)
             playerDetected = PlayerDetection();
         if (playerDetected)
         {
-            this.transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
+            this.transform.position = Vector2.MoveTowards(this.transform.position, player.position + diference, speed * Time.deltaTime);
         }
         else
         {
             #region Patrullar
-            if (enemyRigidbody.velocity.x == 0 || !EndOfPlatform())
+            if (!EndOfPlatform() || enemyRigidbody.velocity.x == 0)
                 facingRight = !facingRight;
             PlatformPatrolling();
             #endregion
@@ -58,21 +61,20 @@ public class PatrollingEnemy : Enemy
         return Physics2D.Raycast(groundSensor.position, Vector2.down, 1.5f);
     }
 
+    
+
     public void PlatformPatrolling()
     {
         float currentSpeed = speed;
-        if (facingRight)
-        {
-            this.transform.eulerAngles = new Vector3(0, 180, 0);
-        }
-        else
+        if (!facingRight)
         {
             currentSpeed = -speed;
-            this.transform.eulerAngles = Vector3.zero;
         }
 
         enemyRigidbody.velocity = new Vector2(currentSpeed, enemyRigidbody.velocity.y);
     }
+
+    
 
     private void OnDrawGizmos()
     {

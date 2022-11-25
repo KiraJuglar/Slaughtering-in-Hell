@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Variables de stats del jugador
-    int healthPoints = INITIAL_HEALTH;
+    [SerializeField] int healthPoints = INITIAL_HEALTH;
     #endregion
 
     #region Variables para disparo de jugador
@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
         healthPoints -= damage;
         if (healthPoints <= 0)
         {
-            //Die
+            Debug.Log("Game Over");
         }
     }
 }

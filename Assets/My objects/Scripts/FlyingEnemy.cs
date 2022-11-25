@@ -13,6 +13,8 @@ public class FlyingEnemy : Enemy
 
     private void FixedUpdate()
     {
-        this.transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
+        EnemyDirection();
+        this.transform.position = Vector2.MoveTowards(this.transform.position, player.position + (diference), speed * Time.deltaTime);
     }
+    
 }
