@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     #region Constantes
     [SerializeField] const int INITIAL_HEALTH = 100;
     [SerializeField] const int MAX_HEALTH = 100;
+    [SerializeField] const int MAX_ARMOR = 100;
+    [SerializeField] const int INITIAL_ARMOR = 0;
     #endregion
 
     #region Variables del movimiento del jugador
@@ -16,7 +18,8 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Variables de stats del jugador
-    int healthPoints = INITIAL_HEALTH;
+    [SerializeField] int healthPoints = INITIAL_HEALTH;
+    [SerializeField] int armorPoints = INITIAL_ARMOR;
     #endregion
 
     #region Variables para disparo de jugador
@@ -24,6 +27,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject bullet;
     [SerializeField] Transform aim; //Mira del jugador
     Vector2 facingDirection;
+    [SerializeField] int ammo;
     #endregion
 
     private Animator anim;
@@ -113,14 +117,31 @@ public class PlayerController : MonoBehaviour
     {
         if (healthPoints + points <= 0)
             //Die();
-            if (healthPoints + points <= MAX_HEALTH)
-            {
-                healthPoints += points;
-            }
-            else
-            {
-                healthPoints = MAX_HEALTH;
-            }
+        if (healthPoints + points <= MAX_HEALTH)
+        {
+            healthPoints += points;
+        }
+        else
+        {
+            healthPoints = MAX_HEALTH;
+        }
+    }
+
+    public void CollectArmor(int points)
+    {
+        if (armorPoints + points <= MAX_ARMOR)
+        {
+            armorPoints += points;
+        }
+        else
+        {
+            armorPoints = MAX_ARMOR;
+        }
+    }
+
+    public void CollectAmmo(int ammo)
+    {
+        this.ammo = ammo;
     }
     #endregion
 

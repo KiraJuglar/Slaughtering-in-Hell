@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] float speed = 4;
+    [SerializeField] int damage = 25;
     // Start is called before the first frame update
     void Start()
     {
