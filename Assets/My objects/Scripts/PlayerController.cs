@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     [SerializeField]private LayerMask groundLayer;
     private BoxCollider2D boxCollider;
-    //private bool grounded; // Validamos si el jugador tocó el suelo
+    private bool shooting; // Validamos si el jugador esta disparando
 
     # region Brinco
     [SerializeField] private bool jumpRequest = false;
@@ -73,16 +73,31 @@ public class PlayerController : MonoBehaviour
         facingDirection = playerCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         aim.position = (Vector3)facingDirection.normalized + transform.position;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && isGrounded())
         {
             anim.SetTrigger("shoot");
             float angle = Mathf.Atan2(facingDirection.y, facingDirection.x) * Mathf.Rad2Deg;
             Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
             GameObject newBullet = Instantiate(bullet, transform.position, rotationTarget);
         }
+        if (isShooting_Jumping())
+        {
+            anim.SetTrigger("shoot_jumping");
+            float angle = Mathf.Atan2(facingDirection.y, facingDirection.x) * Mathf.Rad2Deg;
+            Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
+            GameObject newBullet = Instantiate(bullet, transform.position, rotationTarget);
+        
+            if (!isShooting_Jumping())
+            {
+                anim.SetBool("isShootingJumping", false);
+            }
+        }
+
+
         #endregion
         anim.SetBool("grounded", isGrounded());
     }
+
 
     #region M�todos de movimiento del jugador
     void Jump()
@@ -141,6 +156,18 @@ public class PlayerController : MonoBehaviour
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
         return raycastHit.collider != null;
+    }
+    #endregion
+
+    # region Metodo para validar si el player esta disparando
+    private bool isShooting_Jumping()
+    {
+        if(Input.GetMouseButtonDown(0) && !isGrounded())
+        {
+            return true;
+        }else
+            return false;
+        
     }
     #endregion
 
