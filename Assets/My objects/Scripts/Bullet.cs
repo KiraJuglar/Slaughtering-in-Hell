@@ -5,11 +5,13 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] float speed = 4;
-    [SerializeField] int damage = 25;
+    [SerializeField] float damage = 25;
+    [SerializeField] float destroyTime = 5;
+    [SerializeField] int impacts = 1;
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 5);
+        Destroy(gameObject, destroyTime);
     }
     void Update()
     {
@@ -19,5 +21,17 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Que haga daño al enemigo
+    }
+
+    public float Damage
+    {
+        get { return damage; }
+        set { damage = value; }
+    }
+
+    public float DestroyTime
+    {
+        get { return destroyTime; }
+        set { destroyTime = value; }
     }
 }

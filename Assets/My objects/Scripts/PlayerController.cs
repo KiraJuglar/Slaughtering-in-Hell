@@ -24,10 +24,11 @@ public class PlayerController : MonoBehaviour
 
     #region Variables para disparo de jugador
     [SerializeField] Camera playerCamera; //Camara que nos otorgara la posici�n en la que apunta y dispara el usuario
-    [SerializeField] GameObject bullet;
     [SerializeField] Transform aim; //Mira del jugador
-    Vector2 facingDirection;
+    Vector2 facingDirection; //Nos indica hacia donde esta apuntando el jugador;
+    Weapon weapon;
     [SerializeField] int ammo;
+    bool needreload = false;
     #endregion
 
     private Animator anim;
@@ -48,6 +49,7 @@ public class PlayerController : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        weapon = GetComponent<Weapon>();
     }
 
     private void FixedUpdate()
@@ -77,14 +79,41 @@ public class PlayerController : MonoBehaviour
         facingDirection = playerCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         aim.position = (Vector3)facingDirection.normalized + transform.position;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
-            float angle = Mathf.Atan2(facingDirection.y, facingDirection.x) * Mathf.Rad2Deg;
-            Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
-            GameObject newBullet = Instantiate(bullet, transform.position, rotationTarget);
+            needreload =  weapon.shoot(facingDirection);//Se intenta disparar, si no hay munición se recargará el arma
+            if (needreload && ammo > 0)
+            {
+                ReloadWeapon();
+            }
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+            ReloadWeapon();
         #endregion
+
+        #region Cambiar arma
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            weapon.setType(WeaponType.pistol);
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+            weapon.setType(WeaponType.shotgun);
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+            weapon.setType(WeaponType.assaultRifle);
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+            weapon.setType(WeaponType.machineGun);
+        #endregion
+
         anim.SetBool("grounded", isGrounded());
+    }
+
+    void ReloadWeapon()
+    {
+        int ammoRequired = weapon.AmmoCapacity - weapon.Ammo;
+        weapon.Reload(ammo);
+        
+        ammo -= ammoRequired;
+        if (ammo < 0)
+            ammo = 0;
     }
 
     #region M�todos de movimiento del jugador
