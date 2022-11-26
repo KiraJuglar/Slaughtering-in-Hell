@@ -161,7 +161,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.43}
+  m_Offset: {x: 0, y: 0.44}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 932534813}
   - component: {fileID: 932534812}
   - component: {fileID: 932534815}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plataforma de prueba
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 1634183081}
   - component: {fileID: 1634183080}
   - component: {fileID: 1634183079}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plataforma de prueba2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -532,29 +532,17 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: m_Size.x
-      value: 0.58821565
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Size.y
-      value: 0.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Offset.x
-      value: -0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Offset.y
-      value: 0.47
-      objectReference: {fileID: 0}
     - target: {fileID: 4304540308131046905, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
       propertyPath: m_Constraints
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304540308131046905, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
+      propertyPath: m_GravityScale
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825933608273202507, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 5793326515315879759, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
       propertyPath: m_Name
@@ -563,7 +551,7 @@ PrefabInstance:
     - target: {fileID: 8236076868534688488, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1376054679, guid: cfad5d0e2b4c93e4ba5677126e5f324c, type: 3}
+      objectReference: {fileID: 2016856202, guid: cfad5d0e2b4c93e4ba5677126e5f324c, type: 3}
     - target: {fileID: 8236076868534688488, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1

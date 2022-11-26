@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            anim.SetTrigger("shoot");
             float angle = Mathf.Atan2(facingDirection.y, facingDirection.x) * Mathf.Rad2Deg;
             Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
             GameObject newBullet = Instantiate(bullet, transform.position, rotationTarget);
