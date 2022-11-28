@@ -5,7 +5,8 @@ using UnityEngine;
 public enum CollectableType
 {
     healthPotion,
-    ammo,
+    fusilAmmo,
+    shotgunAmmo,
     armor,
 }
 
@@ -31,7 +32,10 @@ public class Collectables : MonoBehaviour
             case CollectableType.healthPotion:
                 player.GetComponent<PlayerController>().CollectHealth(this.value);
                 break;
-            case CollectableType.ammo:
+            case CollectableType.fusilAmmo:
+                player.GetComponent<PlayerController>().CollectAmmo(this.value);
+                break;
+            case CollectableType.shotgunAmmo:
                 player.GetComponent<PlayerController>().CollectAmmo(this.value);
                 break;
             case CollectableType.armor:
