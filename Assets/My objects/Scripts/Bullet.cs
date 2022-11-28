@@ -5,30 +5,33 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] float speed = 4;
-
-
+    [SerializeField] float damage = 25;
+    [SerializeField] float destroyTime = 5;
+    [SerializeField] int impacts = 1;
     // Start is called before the first frame update
-    //void Start()
-    //{
-    //    Destroy(gameObject, 5);
-   //}
-   private BoxCollider2D boxCollider;
-
-    private void Awake()
+    void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        Destroy(gameObject, destroyTime);
     }
-
     void Update()
     {
-        //if (hit) return;
-        float movementSpeed = speed * Time.deltaTime;
-        transform.Translate(movementSpeed, 0, 0);
         transform.position += transform.right.normalized * Time.deltaTime * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Que haga da�o al enemigo
+        //Que haga daño al enemigo
+    }
+
+    public float Damage
+    {
+        get { return damage; }
+        set { damage = value; }
+    }
+
+    public float DestroyTime
+    {
+        get { return destroyTime; }
+        set { destroyTime = value; }
     }
 }

@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     #region Constantes
     [SerializeField] const int INITIAL_HEALTH = 100;
     [SerializeField] const int MAX_HEALTH = 100;
+    [SerializeField] const int MAX_ARMOR = 100;
+    [SerializeField] const int INITIAL_ARMOR = 0;
     #endregion
 
     #region Variables del movimiento del jugador
@@ -16,14 +18,17 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Variables de stats del jugador
-    int healthPoints = INITIAL_HEALTH;
+    [SerializeField] int healthPoints = INITIAL_HEALTH;
+    [SerializeField] int armorPoints = INITIAL_ARMOR;
     #endregion
 
     #region Variables para disparo de jugador
     [SerializeField] Camera playerCamera; //Camara que nos otorgara la posici�n en la que apunta y dispara el usuario
-    [SerializeField] GameObject bullet;
     [SerializeField] Transform aim; //Mira del jugador
     Vector2 facingDirection;
+    Weapon weapon;
+    [SerializeField] int ammo;
+    bool needreload = false;
     #endregion
 
     private Animator anim; // Animacion
@@ -44,6 +49,7 @@ public class PlayerController : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        weapon = GetComponent<Weapon>();
     }
 
     private void FixedUpdate()
@@ -73,7 +79,19 @@ public class PlayerController : MonoBehaviour
         facingDirection = playerCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         aim.position = (Vector3)facingDirection.normalized + transform.position;
 
-        if (Input.GetMouseButtonDown(0) && isGrounded())
+        if (Input.GetMouseButton(0))
+        {
+            needreload =  weapon.shoot(facingDirection);//Se intenta disparar, si no hay munición se recargará el arma
+            if (needreload && ammo > 0)
+            {
+                ReloadWeapon();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+            ReloadWeapon();
+
+        /*if (Input.GetMouseButtonDown(0) && isGrounded())
         {
             anim.SetTrigger("shoot");
             float angle = Mathf.Atan2(facingDirection.y, facingDirection.x) * Mathf.Rad2Deg;
@@ -91,7 +109,7 @@ public class PlayerController : MonoBehaviour
             {
                 anim.SetBool("isShootingJumping", false);
             }
-        }
+        }*/
         #endregion
 
         #region Golpe
@@ -101,7 +119,28 @@ public class PlayerController : MonoBehaviour
         }
         #endregion
 
+        #region Cambiar arma
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            weapon.setType(WeaponType.pistol);
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+            weapon.setType(WeaponType.shotgun);
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+            weapon.setType(WeaponType.assaultRifle);
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+            weapon.setType(WeaponType.machineGun);
+        #endregion
+
         anim.SetBool("grounded", isGrounded());
+    }
+
+    void ReloadWeapon()
+    {
+        int ammoRequired = weapon.AmmoCapacity - weapon.Ammo;
+        weapon.Reload(ammo);
+        
+        ammo -= ammoRequired;
+        if (ammo < 0)
+            ammo = 0;
     }
 
 
@@ -143,6 +182,23 @@ public class PlayerController : MonoBehaviour
                 healthPoints = MAX_HEALTH;
             }
     }
+
+    public void CollectArmor(int points)
+    {
+        if (armorPoints + points <= MAX_ARMOR)
+        {
+            armorPoints += points;
+        }
+        else
+        {
+            armorPoints = MAX_ARMOR;
+        }
+    }
+
+    public void CollectAmmo(int ammo)
+    {
+        this.ammo = ammo;
+    }
     #endregion
 
     #region Métodos para la colisión con el suelo del jugador
@@ -155,6 +211,15 @@ public class PlayerController : MonoBehaviour
         }
     }
     #endregion
+
+    public void TakeDamage(int damage)
+    {
+        healthPoints -= damage;
+        if (healthPoints <= 0)
+        {
+            Debug.Log("Game Over");
+        }
+    }
 
     #region Metodo para validar si el player esta tocando el suelo
     private bool isGrounded()
