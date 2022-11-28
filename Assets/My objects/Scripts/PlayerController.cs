@@ -26,9 +26,9 @@ public class PlayerController : MonoBehaviour
     Vector2 facingDirection;
     #endregion
 
-    private Animator anim;
-    [SerializeField]private LayerMask groundLayer;
-    private BoxCollider2D boxCollider;
+    private Animator anim; // Animacion
+    [SerializeField]private LayerMask groundLayer; // Mascara del suelo
+    private BoxCollider2D boxCollider; // Box Collider del player
     private bool shooting; // Validamos si el jugador esta disparando
 
     # region Brinco
@@ -92,9 +92,15 @@ public class PlayerController : MonoBehaviour
                 anim.SetBool("isShootingJumping", false);
             }
         }
-
-
         #endregion
+
+        #region Golpe
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            anim.SetTrigger("punch");
+        }
+        #endregion
+
         anim.SetBool("grounded", isGrounded());
     }
 
@@ -119,7 +125,6 @@ public class PlayerController : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = false;
         }
         anim.SetBool("run", horizontalInput != 0);
-
     }
 
     #endregion
@@ -151,7 +156,7 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
-    # region Metodo para validar si el player esta tocando el suelo
+    #region Metodo para validar si el player esta tocando el suelo
     private bool isGrounded()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
@@ -159,7 +164,7 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
-    # region Metodo para validar si el player esta disparando
+    #region Metodo para validar si el player esta disparando
     private bool isShooting_Jumping()
     {
         if(Input.GetMouseButtonDown(0) && !isGrounded())
