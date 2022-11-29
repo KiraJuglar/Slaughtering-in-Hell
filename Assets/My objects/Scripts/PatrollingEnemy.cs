@@ -81,6 +81,7 @@ public class PatrollingEnemy : Enemy
         }
 
         enemyRigidbody.velocity = new Vector2(currentSpeed, enemyRigidbody.velocity.y);
+        
     }
 
 
