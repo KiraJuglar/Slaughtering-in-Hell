@@ -20,7 +20,10 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Que haga daño al enemigo
+        if(collision.CompareTag("Enemy"))
+        {
+            collision.GetComponent<Enemy>().TakeDamage();
+        }
     }
 
     public float Damage

@@ -47,7 +47,6 @@ public class Weapon : MonoBehaviour
                 GameObject newBullet = Instantiate(bullet, transform.position, rotationTarget);
                 newBullet.GetComponent<Bullet>().Damage = damage;
                 newBullet.GetComponent<Bullet>().DestroyTime = range;
-                newBullet.GetComponent<Bullet>().Damage = damage;
                 ammo--;
             }
             return false;

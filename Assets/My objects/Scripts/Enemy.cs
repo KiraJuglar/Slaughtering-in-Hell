@@ -4,31 +4,36 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    #region Caracteristicas del enemigo
     [SerializeField] protected float speed = 5;
     [SerializeField] int damage = 10;
     [SerializeField] int health = 5;
-    [SerializeField] int timeAttack = 1;
+    #endregion
 
+    #region Variables de ataque
+    [SerializeField] protected bool canShoot = false;
     bool attack = true;
+    protected bool canAttack = false;
+    [SerializeField] int timeAttack = 1;
     [SerializeField] GameObject bullet;
-
     protected Transform player;
+    #endregion
+
+    #region Variables de movimiento
     protected bool facingRight = true;
     protected Vector3 diference = new Vector3(1, 0, 0);
+    #endregion
 
-    // Start is called before the first frame update
-    void Start()
+    #region Métodos de movimiento
+    void isFacingRight()
     {
-
+        if (!player)
+            return;
+        if (this.transform.position.x > player.position.x)
+            facingRight = false;
+        else
+            facingRight = true;
     }
-
-    private void FixedUpdate()
-    {
-
-
-    }
-
-
 
     protected void EnemyDirection()
     {
@@ -45,8 +50,10 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    #endregion
 
 
+    #region Métodos de ataque
     public void TakeDamage()
     {
         health--;
@@ -56,30 +63,19 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void isFacingRight()
-    {
-        if (!player)
-            return;
-        if (this.transform.position.x > player.position.x)
-            facingRight = false;
-        else
-            facingRight = true;
-    }
+    
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected void Attack()
     {
-        if (collision.CompareTag("Player"))
+        if (attack)
         {
-            if (attack)
-            {
-                collision.GetComponent<PlayerController>().TakeDamage(damage);
-                attack = false;
-                StartCoroutine(reloadAttack());
-            }
+            player.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+            attack = false;
+            StartCoroutine(reloadAttack());
         }
     }
 
-    protected void Shoot()
+    protected IEnumerator Shoot()
     {
         Vector3 direction = player.position - transform.position;
         if (player && Vector3.Distance(this.transform.position, player.position) < 5)
@@ -87,13 +83,36 @@ public class Enemy : MonoBehaviour
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
             GameObject newBullet = Instantiate(bullet, transform.position, rotationTarget);
+            newBullet.GetComponent<Bullet>().Damage = damage;
+            newBullet.GetComponent<Bullet>().DestroyTime = 5;
+                
         }
+        yield return new WaitForSeconds(timeAttack);
     }
-
 
     IEnumerator reloadAttack()
     {
         yield return new WaitForSeconds(timeAttack);
         attack = true;
     }
+
+    #endregion
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            canAttack = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            canAttack = false;
+        }
+    }
+
+
 }

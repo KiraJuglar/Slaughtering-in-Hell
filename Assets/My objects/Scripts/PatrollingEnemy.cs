@@ -25,9 +25,15 @@ public class PatrollingEnemy : Enemy
 
         if (!playerDetected)
             playerDetected = PlayerDetection();
-        if (playerDetected)
+        else if (playerDetected)
         {
+            if (Vector3.Distance(player.position, transform.position) < visionDistance)
+                playerDetected = false;
             this.transform.position = Vector2.MoveTowards(this.transform.position, player.position + diference, speed * Time.deltaTime);
+            if (canAttack)
+                Attack();
+            else if (canShoot)
+                Shoot();
         }
         else
         {
@@ -49,8 +55,11 @@ public class PatrollingEnemy : Enemy
         RaycastHit2D hit = Physics2D.Raycast(vision.position, directionVector, visionDistance);
         if (hit && hit.transform.name == "Player")
         {
+            
             player = hit.transform;
             return true;
+
+            
         }
         return false;
     }
