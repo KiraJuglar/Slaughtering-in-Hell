@@ -10,12 +10,14 @@ public class PatrollingEnemy : Enemy
     bool playerDetected = false;
 
     Rigidbody2D enemyRigidbody;
+    Animator anim;
 
 
     // Start is called before the first frame update
     void Start()
     {
         enemyRigidbody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -29,11 +31,19 @@ public class PatrollingEnemy : Enemy
         {
             if (Vector3.Distance(player.position, transform.position) < visionDistance)
                 playerDetected = false;
+
+            anim.SetBool("run", true);
             this.transform.position = Vector2.MoveTowards(this.transform.position, player.position + diference, speed * Time.deltaTime);
             if (canAttack)
+            {
                 Attack();
+                anim.SetBool("run", false);
+                anim.SetTrigger("attack");
+            }
             else if (canShoot)
+            {
                 Shoot();
+            }
         }
         else
         {
@@ -81,7 +91,8 @@ public class PatrollingEnemy : Enemy
         }
 
         enemyRigidbody.velocity = new Vector2(currentSpeed, enemyRigidbody.velocity.y);
-        
+        anim.SetBool("run", true);
+
     }
 
 
