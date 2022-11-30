@@ -17,14 +17,13 @@ public class PatrollingEnemy : Enemy
     void Start()
     {
         enemyRigidbody = GetComponent<Rigidbody2D>();
-        //anim = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
     {
 
         EnemyDirection();
-
+        
         if (!playerDetected)
             playerDetected = PlayerDetection();
         if (playerDetected)
@@ -32,10 +31,6 @@ public class PatrollingEnemy : Enemy
             if (Vector3.Distance(player.position, transform.position) < visionDistance)
                 playerDetected = false;
 
-            //anim.SetBool("run", true);
-            
-            
-            this.transform.position = Vector2.MoveTowards(this.transform.position, player.position + diference, speed * Time.deltaTime);
             if (canAttack)
             {
                 Attack();
@@ -44,10 +39,12 @@ public class PatrollingEnemy : Enemy
             }
             else if (canShoot)
             {
-                Shoot();
+                StartCoroutine(Shoot());
                 anim.SetBool("run", false);
                 anim.SetTrigger("shoot");
             }
+            else
+                this.transform.position = Vector2.MoveTowards(this.transform.position, player.position + diference, speed * Time.deltaTime);
         }
         else
         {

@@ -64,9 +64,9 @@ public class Enemy : MonoBehaviour
 
 
     #region M�todos de ataque
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        health--;
+        health -= damage;
         if (health <= 0)
         {
             anim.SetBool("death", true);
@@ -92,17 +92,20 @@ public class Enemy : MonoBehaviour
 
     protected IEnumerator Shoot()
     {
+        Vector3 auxV = new Vector3(-0.5f,0.5f,0);
+        canShoot = false;
         Vector3 direction = player.position - transform.position;
-        if (player && Vector3.Distance(this.transform.position, player.position) < 5)
+        if (player && Vector3.Distance(this.transform.position, player.position) < 10)
         {
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
-            GameObject newBullet = Instantiate(bullet, transform.position, rotationTarget);
+            GameObject newBullet = Instantiate(bullet, transform.position + auxV, rotationTarget);
             newBullet.GetComponent<Bullet>().Damage = damage;
             newBullet.GetComponent<Bullet>().DestroyTime = 5;
                 
         }
         yield return new WaitForSeconds(timeAttack);
+        canShoot = true;
     }
 
     IEnumerator reloadAttack()

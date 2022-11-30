@@ -15,8 +15,8 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] WeaponType type = WeaponType.pistol;
     float rate;
-    float damage;
     float range;
+    int damage;
     int ammoCapacity;
     int[] ammo = { 0, 0, 0, 0, 0 };
 
@@ -70,25 +70,25 @@ public class Weapon : MonoBehaviour
             case WeaponType.pistol:
                 range = 0.5f;
                 rate = 0.5f;
-                damage = 25f;
+                damage = 25;
                 ammoCapacity = 100;
                 break;
             case WeaponType.shotgun:
                 range = 0.5f;
                 rate = 0.5f;
-                damage = 100f;
+                damage = 100;
                 ammoCapacity = 50;
                 break;
             case WeaponType.assaultRifle:
                 range = 1f;
                 rate = 0.1f;
-                damage = 30f;
+                damage = 30;
                 ammoCapacity = 200;
                 break;
             case WeaponType.machineGun:
                 range = 0.7f;
                 rate = 0.05f;
-                damage = 25f;
+                damage = 25;
                 ammoCapacity = 200;
                 break;
             case WeaponType.chainsaw:

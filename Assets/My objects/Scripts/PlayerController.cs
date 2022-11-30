@@ -132,15 +132,6 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("grounded", isGrounded());
     }
 
-    /*void ReloadWeapon()
-    {
-        int ammoRequired = weapon.AmmoCapacity - weapon.Ammo;
-        weapon.Reload(ammo);
-        
-        ammo -= ammoRequired;
-        if (ammo < 0)
-            ammo = 0;
-    }*/
 
 
     #region M�todos de movimiento del jugador
