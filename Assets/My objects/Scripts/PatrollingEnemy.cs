@@ -27,7 +27,7 @@ public class PatrollingEnemy : Enemy
 
         if (!playerDetected)
             playerDetected = PlayerDetection();
-        else if (playerDetected)
+        if (playerDetected)
         {
             if (Vector3.Distance(player.position, transform.position) < visionDistance)
                 playerDetected = false;
