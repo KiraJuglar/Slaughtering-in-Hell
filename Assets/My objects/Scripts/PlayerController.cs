@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform aim; //Mira del jugador
     Vector2 facingDirection;
     Weapon weapon;
+    bool[] weaponsUnlocked = { true, false, false, false, false };
     bool needreload = false;
     #endregion
 
@@ -118,13 +119,13 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #region Cambiar arma
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && weaponsUnlocked[0])
             weapon.setType(WeaponType.pistol);
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) && weaponsUnlocked[1])
             weapon.setType(WeaponType.shotgun);
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3) && weaponsUnlocked[2])
             weapon.setType(WeaponType.assaultRifle);
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (Input.GetKeyDown(KeyCode.Alpha4) && weaponsUnlocked[3])
             weapon.setType(WeaponType.machineGun);
         #endregion
 
