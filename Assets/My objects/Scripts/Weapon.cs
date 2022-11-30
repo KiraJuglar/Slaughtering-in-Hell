@@ -71,25 +71,25 @@ public class Weapon : MonoBehaviour
                 range = 0.5f;
                 rate = 0.5f;
                 damage = 25f;
-                ammoCapacity = 10;
+                ammoCapacity = 100;
                 break;
             case WeaponType.shotgun:
                 range = 0.5f;
                 rate = 0.5f;
                 damage = 100f;
-                ammoCapacity = 5;
+                ammoCapacity = 50;
                 break;
             case WeaponType.assaultRifle:
                 range = 1f;
                 rate = 0.1f;
                 damage = 30f;
-                ammoCapacity = 30;
+                ammoCapacity = 200;
                 break;
             case WeaponType.machineGun:
                 range = 0.7f;
                 rate = 0.05f;
                 damage = 25f;
-                ammoCapacity = 20;
+                ammoCapacity = 200;
                 break;
             case WeaponType.chainsaw:
 

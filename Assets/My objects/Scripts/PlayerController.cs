@@ -241,4 +241,20 @@ public class PlayerController : MonoBehaviour
         return weapon;
     }
 
+    public int Health
+    {
+        get
+        {
+            return healthPoints;
+        }
+    }
+
+    public int Armor
+    {
+        get
+        {
+            return armorPoints;
+        }
+    }
+
 }
