@@ -214,6 +214,11 @@ public class PlayerController : MonoBehaviour
         if (healthPoints <= 0)
         {
             Debug.Log("Game Over");
+            anim.SetBool("death", true);
+        }
+        else
+        {
+            anim.SetTrigger("damaged");
         }
     }
 

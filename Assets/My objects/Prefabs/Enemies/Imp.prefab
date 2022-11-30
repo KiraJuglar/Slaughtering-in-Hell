@@ -45,7 +45,8 @@ GameObject:
   - component: {fileID: 4758643280109381308}
   - component: {fileID: 4758643280109381311}
   - component: {fileID: 1256476955}
-  - component: {fileID: 1709484991}
+  - component: {fileID: 1616619964}
+  - component: {fileID: 1616619963}
   m_Layer: 0
   m_Name: Imp
   m_TagString: Enemy
@@ -68,7 +69,7 @@ Transform:
   - {fileID: 4758643279110213977}
   - {fileID: 4758643280459507600}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4758643280109381297
 SpriteRenderer:
@@ -206,7 +207,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 0.07213771}
   m_EdgeRadius: 0
---- !u!95 &1709484991
+--- !u!95 &1616619964
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -226,6 +227,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1616619963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758643280109381299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481b4063dd4abdc499eb7fd6246fcf02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  damage: 10
+  health: 5
+  canShoot: 0
+  timeAttack: 1
+  bullet: {fileID: 0}
 --- !u!1 &4758643280459507603
 GameObject:
   m_ObjectHideFlags: 0

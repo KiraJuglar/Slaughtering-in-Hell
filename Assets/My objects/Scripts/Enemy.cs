@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+
     #region Caracteristicas del enemigo
     [SerializeField] protected float speed = 5;
     [SerializeField] int damage = 10;
@@ -24,7 +25,16 @@ public class Enemy : MonoBehaviour
     protected Vector3 diference = new Vector3(1, 0, 0);
     #endregion
 
-    #region Métodos de movimiento
+    protected Animator anim; // Animacion
+
+    // Start is called before the first frame update
+    private void Awake()
+    {
+        // Grab references for rigidBody and animator from objetc
+        anim = GetComponent<Animator>();
+    }
+
+    #region Mï¿½todos de movimiento
     void isFacingRight()
     {
         if (!player)
@@ -53,13 +63,18 @@ public class Enemy : MonoBehaviour
     #endregion
 
 
-    #region Métodos de ataque
+    #region Mï¿½todos de ataque
     public void TakeDamage()
     {
         health--;
         if (health <= 0)
         {
-            Destroy(gameObject);
+            anim.SetBool("death", true);
+            Destroy(gameObject, 1f);
+        }
+        else
+        {
+            anim.SetTrigger("damaged");
         }
     }
 
