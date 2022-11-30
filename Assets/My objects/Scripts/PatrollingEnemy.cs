@@ -32,7 +32,7 @@ public class PatrollingEnemy : Enemy
             if (Vector3.Distance(player.position, transform.position) < visionDistance)
                 playerDetected = false;
 
-            anim.SetBool("run", true);
+            //anim.SetBool("run", true);
             
             
             this.transform.position = Vector2.MoveTowards(this.transform.position, player.position + diference, speed * Time.deltaTime);
@@ -95,7 +95,7 @@ public class PatrollingEnemy : Enemy
         }
 
         enemyRigidbody.velocity = new Vector2(currentSpeed, enemyRigidbody.velocity.y);
-        //anim.SetBool("run", true);
+        anim.SetBool("run", true);
 
     }
 

@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         // Grab references for rigidBody and animator from objetc
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     #region M�todos de movimiento
