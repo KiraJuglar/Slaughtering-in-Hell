@@ -16,6 +16,8 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.position += transform.right.normalized * Time.deltaTime * speed;
+        if (impacts == 0)
+            Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -23,9 +25,13 @@ public class Bullet : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             collision.GetComponent<Enemy>().TakeDamage(damage);
+            impacts--;
         }
         else if (collision.CompareTag("Player"))
+        {
             collision.GetComponent<PlayerController>().TakeDamage(damage);
+            impacts--;
+        }
     }
 
     public int Damage

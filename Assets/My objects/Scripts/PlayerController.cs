@@ -77,7 +77,6 @@ public class PlayerController : MonoBehaviour
         #region Disparo
         facingDirection = playerCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         aim.position = (Vector3)facingDirection.normalized + transform.position;
-
         if (Input.GetMouseButton(0))
         {
             needreload =  weapon.shoot(facingDirection);//Se intenta disparar, si no hay munición se recargará el arma

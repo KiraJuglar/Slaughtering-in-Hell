@@ -40,11 +40,17 @@ public class Weapon : MonoBehaviour
         {
             if (canShoot)
             {
+                Vector3 auxV = new Vector3(0,0.5f,0);
+                if (facingDirection.x > 0)
+                    auxV.x = 0.68f;
+                else
+                    auxV.x = -0.68f;
+
                 canShoot = false;
                 StartCoroutine(shootTime());
                 float angle = Mathf.Atan2(facingDirection.y, facingDirection.x) * Mathf.Rad2Deg;
                 Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
-                GameObject newBullet = Instantiate(bullet, transform.position, rotationTarget);
+                GameObject newBullet = Instantiate(bullet, transform.position + auxV, rotationTarget);
                 newBullet.GetComponent<Bullet>().Damage = damage;
                 newBullet.GetComponent<Bullet>().DestroyTime = range;
                 ammo[(int)type]--;
