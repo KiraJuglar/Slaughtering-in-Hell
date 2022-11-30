@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform aim; //Mira del jugador
     Vector2 facingDirection;
     Weapon weapon;
-    [SerializeField] int ammo;
     bool needreload = false;
     #endregion
 
@@ -81,14 +80,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             needreload =  weapon.shoot(facingDirection);//Se intenta disparar, si no hay munición se recargará el arma
-            if (needreload && ammo > 0)
+            /*if (needreload && ammo > 0)
             {
                 ReloadWeapon();
-            }
+            }*/
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
-            ReloadWeapon();
+        //if (Input.GetKeyDown(KeyCode.R))
+        //    ReloadWeapon();
 
         /*if (Input.GetMouseButtonDown(0) && isGrounded())
         {
@@ -132,7 +131,7 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("grounded", isGrounded());
     }
 
-    void ReloadWeapon()
+    /*void ReloadWeapon()
     {
         int ammoRequired = weapon.AmmoCapacity - weapon.Ammo;
         weapon.Reload(ammo);
@@ -140,7 +139,7 @@ public class PlayerController : MonoBehaviour
         ammo -= ammoRequired;
         if (ammo < 0)
             ammo = 0;
-    }
+    }*/
 
 
     #region M�todos de movimiento del jugador
@@ -194,10 +193,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void CollectAmmo(int ammo)
-    {
-        this.ammo = ammo;
-    }
+    
     #endregion
 
     #region Métodos para la colisión con el suelo del jugador
@@ -240,5 +236,9 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
+    public Weapon GetWeapon()
+    {
+        return weapon;
+    }
 
 }

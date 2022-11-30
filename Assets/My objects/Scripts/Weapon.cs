@@ -18,7 +18,7 @@ public class Weapon : MonoBehaviour
     float damage;
     float range;
     int ammoCapacity;
-    [SerializeField] int ammo = 0;
+    int[] ammo = { 0, 0, 0, 0, 0 };
 
     [SerializeField] GameObject bullet;
     bool canShoot = true;
@@ -36,7 +36,7 @@ public class Weapon : MonoBehaviour
 
     public bool shoot(Vector2 facingDirection)
     {
-        if (ammo > 0)
+        if (ammo[(int)type] > 0)
         {
             if (canShoot)
             {
@@ -47,7 +47,7 @@ public class Weapon : MonoBehaviour
                 GameObject newBullet = Instantiate(bullet, transform.position, rotationTarget);
                 newBullet.GetComponent<Bullet>().Damage = damage;
                 newBullet.GetComponent<Bullet>().DestroyTime = range;
-                ammo--;
+                ammo[(int)type]--;
             }
             return false;
         }
@@ -64,6 +64,7 @@ public class Weapon : MonoBehaviour
 
     public void setType(WeaponType weapon)
     {
+        type = weapon;
         switch(weapon)
         {
             case WeaponType.pistol:
@@ -96,13 +97,13 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    public void Reload(int ammo)
+    /*public void Reload(int ammo)
     {
         if (ammo > ammoCapacity)
             this.ammo = ammoCapacity;
         else
             this.ammo += ammo;
-    }
+    }*/
 
     public int AmmoCapacity
     {
@@ -111,6 +112,11 @@ public class Weapon : MonoBehaviour
 
     public int Ammo
     {
-        get { return ammo; }
+        get { return ammo[(int)type]; }
+    }
+
+    public void CollectAmmo(int ammo, WeaponType wType)
+    {
+        this.ammo[(int)wType] += ammo;
     }
 }
