@@ -10,7 +10,6 @@ public class PatrollingEnemy : Enemy
     bool playerDetected = false;
 
     Rigidbody2D enemyRigidbody;
-    Enemy enemy;
     //Animator anim;
 
 
@@ -33,18 +32,21 @@ public class PatrollingEnemy : Enemy
             if (Vector3.Distance(player.position, transform.position) < visionDistance)
                 playerDetected = false;
 
-            //enemy.anim.SetBool("run", true);
+            anim.SetBool("run", true);
+            
             
             this.transform.position = Vector2.MoveTowards(this.transform.position, player.position + diference, speed * Time.deltaTime);
             if (canAttack)
             {
                 Attack();
-                //enemy.anim.SetBool("run", false);
-                //enemy.anim.SetTrigger("attack");
+                anim.SetBool("run", false);
+                anim.SetTrigger("attack");
             }
             else if (canShoot)
             {
                 Shoot();
+                anim.SetBool("run", false);
+                anim.SetTrigger("shoot");
             }
         }
         else
@@ -93,7 +95,7 @@ public class PatrollingEnemy : Enemy
         }
 
         enemyRigidbody.velocity = new Vector2(currentSpeed, enemyRigidbody.velocity.y);
-        //enemy.anim.SetBool("run", true);
+        //anim.SetBool("run", true);
 
     }
 

@@ -5,8 +5,6 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
 
-    PatrollingEnemy patrollingEnemy;
-
     #region Caracteristicas del enemigo
     [SerializeField] protected float speed = 5;
     [SerializeField] int damage = 10;
@@ -30,7 +28,7 @@ public class Enemy : MonoBehaviour
     protected Animator anim; // Animacion
 
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         // Grab references for rigidBody and animator from objetc
         anim = GetComponent<Animator>();
@@ -71,7 +69,8 @@ public class Enemy : MonoBehaviour
         health--;
         if (health <= 0)
         {
-            Destroy(gameObject);
+            anim.SetBool("death", true);
+            Destroy(gameObject, 1f);
         }
         else
         {
