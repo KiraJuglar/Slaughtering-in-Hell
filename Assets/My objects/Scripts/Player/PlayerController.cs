@@ -41,6 +41,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int maxJumps = 2, availableJumps = 0;
     #endregion
 
+    # region Campos para el dash del player
+    private float _dashingTime = 0.1f;
+    private float _dashForce = 15f;
+    private float _dashingCooldown = 2f;
+    private int _nDashes = 2;
+    private int _maxDashes = 2;
+    private bool _isDashing;
+    private bool _canDash = true;
+    [SerializeField] private TrailRenderer tr;
+    # endregion
+
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +65,10 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (_isDashing)
+        {
+            return;
+        }
         Move();
         if (jumpRequest)
         {
@@ -67,10 +82,22 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_isDashing)
+        {
+            return;
+        }
+
         #region Movimiento
         if (Input.GetKeyDown(KeyCode.Space) && availableJumps > 0)
         {
             Jump();
+        }
+        #endregion
+
+        #region Dash
+        if ((Input.GetKeyDown(KeyCode.Q) && _canDash) && _nDashes > 0 )
+        {
+            StartCoroutine(Dash());
         }
         #endregion
 
@@ -190,7 +217,6 @@ public class PlayerController : MonoBehaviour
     #region Métodos para la colisión con el suelo del jugador
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
         if (collision.gameObject.CompareTag("Ground"))
         {
             availableJumps = maxJumps;
@@ -252,5 +278,28 @@ public class PlayerController : MonoBehaviour
             return armorPoints;
         }
     }
+
+    #region Metodo para realizar el dash
+    private IEnumerator Dash()
+    {
+        _isDashing = true;
+        _canDash = false;
+        float originalGravity = rigidBody.gravityScale;;
+        rigidBody.gravityScale = 0f;
+        rigidBody.velocity = new Vector2(Input.GetAxis("Horizontal") * _dashForce, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(_dashingTime);
+        tr.emitting = false;
+        rigidBody.gravityScale = originalGravity;
+        _isDashing = false;
+        _nDashes--;
+        if (_nDashes == 0)
+        {
+            yield return new WaitForSeconds(_dashingCooldown);
+            _nDashes = _maxDashes;
+        }
+        _canDash = true;
+    }
+    #endregion
 
 }
