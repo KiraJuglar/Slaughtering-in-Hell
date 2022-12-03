@@ -2304,6 +2304,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4304540308131046905, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7feb527639b88584b9c472f03bcf547b, type: 2}
     - target: {fileID: 5793326515315879759, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3017,6 +3021,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2975411283572796796, guid: 1aa565ee7a6c6224b937707c378bfbaf, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7feb527639b88584b9c472f03bcf547b, type: 2}
     - target: {fileID: 2975411283572796798, guid: 1aa565ee7a6c6224b937707c378bfbaf, type: 3}
       propertyPath: m_Name
       value: Zombie (1)
@@ -3519,6 +3527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Imperial
       objectReference: {fileID: 0}
+    - target: {fileID: 4784166510935198585, guid: c15e17f3ba067af47977831dd867bca3, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7feb527639b88584b9c472f03bcf547b, type: 2}
     - target: {fileID: 4784166510935198587, guid: c15e17f3ba067af47977831dd867bca3, type: 3}
       propertyPath: m_RootOrder
       value: 2

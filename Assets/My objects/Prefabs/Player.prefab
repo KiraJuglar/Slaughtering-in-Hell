@@ -141,7 +141,6 @@ MonoBehaviour:
   armorPoints: 0
   playerCamera: {fileID: 519420031}
   aim: {fileID: 184966117060048231}
-  ammo: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -164,7 +163,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 2.5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7feb527639b88584b9c472f03bcf547b, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -280,7 +279,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  ammo: 6
   bullet: {fileID: 1765349173308654228, guid: 567380a5a0b68c247a159edc93969f62, type: 3}
 --- !u!1 &8604886068718077398
 GameObject:

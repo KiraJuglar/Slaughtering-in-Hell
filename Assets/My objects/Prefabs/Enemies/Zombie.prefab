@@ -99,7 +99,7 @@ Transform:
   - {fileID: 2975411282928609310}
   - {fileID: 2975411283462915942}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2975411283572796794
 SpriteRenderer:
@@ -185,7 +185,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: cc7cfd5117b1e9147b8b38648e4d25cb, type: 2}
+  m_Material: {fileID: 6200000, guid: 7feb527639b88584b9c472f03bcf547b, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
