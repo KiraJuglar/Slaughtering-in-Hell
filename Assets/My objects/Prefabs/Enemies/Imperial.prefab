@@ -172,7 +172,7 @@ Transform:
   - {fileID: 4784166512111297576}
   - {fileID: 4784166510897683403}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &4784166510935198585
 Rigidbody2D:
@@ -223,9 +223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca72e9a12ca57748905d64ca95d81aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  damage: 10
-  health: 5
+  speed: 4
+  damage: 30
+  health: 70
   canShoot: 0
   timeAttack: 1
   bullet: {fileID: 1765349173308654228, guid: 567380a5a0b68c247a159edc93969f62, type: 3}
