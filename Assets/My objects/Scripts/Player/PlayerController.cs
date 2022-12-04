@@ -187,16 +187,16 @@ public class PlayerController : MonoBehaviour
     #region M�todos de estadisticas del jugador
     public void CollectHealth(int points)
     {
-        if (healthPoints + points <= 0)
-            //Die();
-            if (healthPoints + points <= MAX_HEALTH)
-            {
-                healthPoints += points;
-            }
-            else
-            {
-                healthPoints = MAX_HEALTH;
-            }
+        if (healthPoints + points < 0)
+            healthPoints = 0;
+        else if (healthPoints + points <= MAX_HEALTH)
+        {
+            healthPoints += points;
+        }
+        else
+        {
+            healthPoints = MAX_HEALTH;
+        }
     }
 
     public void CollectArmor(int points)
