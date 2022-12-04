@@ -9,9 +9,7 @@ public class PatrollingEnemy : Enemy
     [SerializeField] float visionDistance = 3f;
     bool playerDetected = false;
 
-    Rigidbody2D enemyRigidbody;
-    //Animator anim;
-
+    private Rigidbody2D enemyRigidbody;
 
     // Start is called before the first frame update
     void Start()
@@ -66,21 +64,18 @@ public class PatrollingEnemy : Enemy
         RaycastHit2D hit = Physics2D.Raycast(vision.position, directionVector, visionDistance);
         if (hit && hit.transform.name == "Player")
         {
-            
             player = hit.transform;
             return true;
-
-            
         }
         return false;
     }
+
 
     private bool EndOfPlatform()
     {
         //Detecta si la plataforma se ha terminado
         return Physics2D.Raycast(groundSensor.position, Vector2.down, 1.5f);
     }
-
 
 
     public void PlatformPatrolling()

@@ -36,12 +36,12 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D boxCollider; // Box Collider del player
     private bool shooting; // Validamos si el jugador esta disparando
 
-    # region Brinco
+    #region Brinco
     [SerializeField] private bool jumpRequest = false;
     [SerializeField] private int maxJumps = 2, availableJumps = 0;
     #endregion
 
-    # region Campos para el dash del player
+    #region Campos para el dash del player
     private float _dashingTime = 0.1f;
     private float _dashForce = 15f;
     private float _dashingCooldown = 2f;
@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
     private bool _isDashing;
     private bool _canDash = true;
     [SerializeField] private TrailRenderer tr;
-    # endregion
+    #endregion
 
 
     // Start is called before the first frame update
@@ -229,6 +229,8 @@ public class PlayerController : MonoBehaviour
         healthPoints -= damage;
         if (healthPoints <= 0)
         {
+            rigidBody.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | 
+            RigidbodyConstraints2D.FreezePositionY;
             Debug.Log("Game Over");
             anim.SetBool("death", true);
         }

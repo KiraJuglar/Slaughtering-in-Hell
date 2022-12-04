@@ -26,12 +26,14 @@ public class Enemy : MonoBehaviour
     #endregion
 
     protected Animator anim; // Animacion
+    Rigidbody2D rigidBody;
 
     // Start is called before the first frame update
     private void Awake()
     {
         // Grab references for rigidBody and animator from objetc
         anim = GetComponentInChildren<Animator>();
+        rigidBody = GetComponent<Rigidbody2D>();
     }
 
     #region M�todos de movimiento
@@ -69,16 +71,16 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            rigidBody.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | 
+            RigidbodyConstraints2D.FreezePositionY;
             anim.SetBool("death", true);
             Destroy(gameObject, 1f);
         }
         else
         {
-            anim.SetTrigger("damaged");
+            StartCoroutine(WaitAttacked());
         }
     }
-
-    
 
     protected void Attack()
     {
@@ -132,5 +134,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private IEnumerator WaitAttacked()
+    {
+        rigidBody.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | 
+        RigidbodyConstraints2D.FreezePositionY;
+        anim.SetTrigger("damaged");
+        yield return new WaitForSeconds(2);
+        rigidBody.GetComponent<Rigidbody2D>().constraints = ~RigidbodyConstraints2D.FreezePositionX | 
+        ~RigidbodyConstraints2D.FreezePositionY;
+    }
 
 }
