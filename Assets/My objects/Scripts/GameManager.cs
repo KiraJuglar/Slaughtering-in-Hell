@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     {
         if (sharedInstance == null)
             sharedInstance = this;
+
     }
 
     // Update is called once per frame
