@@ -28,12 +28,15 @@ public class Enemy : MonoBehaviour
     protected Animator anim; // Animacion
     Rigidbody2D rigidBody;
 
+    public EnemieCounterLevel enemiesCounter;
+
     // Start is called before the first frame update
     private void Awake()
     {
         // Grab references for rigidBody and animator from objetc
         anim = GetComponentInChildren<Animator>();
         rigidBody = GetComponent<Rigidbody2D>();
+        enemiesCounter = FindObjectOfType<EnemieCounterLevel>();
     }
 
     #region M�todos de movimiento
@@ -75,6 +78,7 @@ public class Enemy : MonoBehaviour
             RigidbodyConstraints2D.FreezePositionY;
             anim.SetBool("death", true);
             Destroy(gameObject, 1f);
+            enemiesCounter.countEnemies--;
         }
         else
         {

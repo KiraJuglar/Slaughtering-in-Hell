@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 4784166510935198534}
   - component: {fileID: 1744295895752647160}
   - component: {fileID: 6507769597472033954}
+  - component: {fileID: 13103975}
   m_Layer: 0
   m_Name: Imperial
   m_TagString: Untagged
@@ -172,7 +173,7 @@ Transform:
   - {fileID: 4784166512111297576}
   - {fileID: 4784166510897683403}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &4784166510935198585
 Rigidbody2D:
@@ -229,6 +230,7 @@ MonoBehaviour:
   canShoot: 0
   timeAttack: 1
   bullet: {fileID: 1765349173308654228, guid: 567380a5a0b68c247a159edc93969f62, type: 3}
+  enemiesCounter: {fileID: 0}
   groundSensor: {fileID: 4784166512111297576}
   vision: {fileID: 4784166510897683403}
   visionDistance: 3
@@ -258,6 +260,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.90899277, y: 0.13543987}
   m_EdgeRadius: 0
+--- !u!114 &13103975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784166510935198535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481b4063dd4abdc499eb7fd6246fcf02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  damage: 10
+  health: 5
+  canShoot: 0
+  timeAttack: 1
+  bullet: {fileID: 0}
+  enemiesCounter: {fileID: 0}
 --- !u!1 &4784166512111297577
 GameObject:
   m_ObjectHideFlags: 0
