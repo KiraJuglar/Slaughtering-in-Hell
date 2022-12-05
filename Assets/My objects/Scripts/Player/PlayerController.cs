@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     #region Variables para disparo de jugador
     [SerializeField] Camera playerCamera; //Camara que nos otorgara la posici�n en la que apunta y dispara el usuario
     [SerializeField] Transform aim; //Mira del jugador
+    [SerializeField] int punchDamage = 20;
     Vector2 facingDirection;
     Weapon weapon;
     bool[] weaponsUnlocked = { true, false, false, false, false };
@@ -140,6 +141,7 @@ public class PlayerController : MonoBehaviour
         #region Golpe
         if (Input.GetKeyDown(KeyCode.F))
         {
+            Punch();
             anim.SetTrigger("punch");
         }
         #endregion
@@ -158,7 +160,15 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("grounded", isGrounded());
     }
 
+    void Punch()
+    {
 
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 1f);
+        if(hit && hit.transform.tag == "Enemy")
+        {
+            hit.transform.GetComponent<Enemy>().TakeDamage(punchDamage);
+        }
+    }
 
     #region M�todos de movimiento del jugador
     void Jump()

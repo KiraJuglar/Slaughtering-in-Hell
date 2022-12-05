@@ -4649,6 +4649,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1629134868, guid: ecaa93cd6361b2c46a045c2a2fa57ce2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8f02c0ee5514e9c4cbe1060fae9d0611, type: 3}
+    - target: {fileID: 2117951234, guid: ecaa93cd6361b2c46a045c2a2fa57ce2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9134a1203d094c841bcf7a1435cd36c3, type: 3}
     - target: {fileID: 7447137522541277301, guid: ecaa93cd6361b2c46a045c2a2fa57ce2, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -4737,7 +4745,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1569780713, guid: ecaa93cd6361b2c46a045c2a2fa57ce2, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ecaa93cd6361b2c46a045c2a2fa57ce2, type: 3}
 --- !u!1001 &1343643000
