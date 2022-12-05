@@ -782,9 +782,9 @@ GameObject:
   m_Component:
   - component: {fileID: 216969489}
   m_Layer: 0
-  m_Name: StartPosition
+  m_Name: StartPositionPlayer
   m_TagString: StartPos
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -796,7 +796,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216969488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.78, y: 0.11, z: 0}
+  m_LocalPosition: {x: -0.78, y: 1.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2064,6 +2064,10 @@ PrefabInstance:
       propertyPath: tr
       value: 
       objectReference: {fileID: 589086239}
+    - target: {fileID: 4825933608273202507, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
+      propertyPath: startPositionPlayer
+      value: 
+      objectReference: {fileID: 216969489}
     - target: {fileID: 5793326515315879759, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2706,9 +2710,9 @@ GameObject:
   m_Component:
   - component: {fileID: 857748560}
   m_Layer: 0
-  m_Name: PortalPosition
-  m_TagString: PortalStartPos
-  m_Icon: {fileID: 0}
+  m_Name: PortalEndPosition
+  m_TagString: PortalEndPos
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8265,6 +8269,14 @@ PrefabInstance:
       propertyPath: sceneBuildIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2399508337687222728, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
+      propertyPath: portalEnd
+      value: 
+      objectReference: {fileID: 857748560}
+    - target: {fileID: 2399508337687222728, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
+      propertyPath: portalPlayerBegin
+      value: 
+      objectReference: {fileID: 216969489}
     - target: {fileID: 2399508337687222730, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
       propertyPath: m_Name
       value: Portal
@@ -8275,11 +8287,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2399508337687222731, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.43
+      value: 5.51
       objectReference: {fileID: 0}
     - target: {fileID: 2399508337687222731, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.498
+      value: 5.36
       objectReference: {fileID: 0}
     - target: {fileID: 2399508337687222731, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
       propertyPath: m_LocalPosition.z

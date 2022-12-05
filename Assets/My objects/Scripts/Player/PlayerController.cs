@@ -54,6 +54,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TrailRenderer tr;
     #endregion
 
+    [SerializeField] Transform startPositionPlayer;
+
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +65,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
         weapon = GetComponent<Weapon>();
+        FindStartPos();
     }
 
     private void FixedUpdate()
@@ -316,20 +319,10 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Metodo para iniciar en una posicion especifica cada nivel
-    private void OnLevelWasLoaded(int level)
-    {
-        FindStartPos();
-        players = GameObject.FindGameObjectsWithTag("Player");
-        if (players.Length > 1)
-        {
-            Destroy(players[1]);
-        }
-    }
-
-
     void FindStartPos()
     {
-        transform.position = GameObject.FindWithTag("StartPos").transform.position;
+        //Player
+        gameObject.transform.position = startPositionPlayer.position;
     }
     #endregion
 
