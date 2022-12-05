@@ -772,6 +772,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2663397171899710430, guid: a0ac0ec5be2ecc949b083707a4719d1d, type: 3}
   m_PrefabInstance: {fileID: 216619807}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &216969488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 216969489}
+  m_Layer: 0
+  m_Name: StartPosition
+  m_TagString: StartPos
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &216969489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216969488}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.78, y: 0.11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &225945977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,7 +1451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7447137522541277301, guid: ecaa93cd6361b2c46a045c2a2fa57ce2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7447137522541277321, guid: ecaa93cd6361b2c46a045c2a2fa57ce2, type: 3}
       propertyPath: m_Pivot.x
@@ -2665,6 +2696,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4594476946069335918, guid: d3b6b901e555b9843aae7334e659de1c, type: 3}
   m_PrefabInstance: {fileID: 936091011}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &857748559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 857748560}
+  m_Layer: 0
+  m_Name: PortalPosition
+  m_TagString: PortalStartPos
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &857748560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857748559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.6, y: 3.59, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &863768675
 GameObject:
   m_ObjectHideFlags: 0
@@ -8195,6 +8257,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2142643129, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
+      propertyPath: iLevelToLoad
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2142643129, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
+      propertyPath: sceneBuildIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2399508337687222730, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
       propertyPath: m_Name
       value: Portal
@@ -8205,11 +8275,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2399508337687222731, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.23
+      value: 7.43
       objectReference: {fileID: 0}
     - target: {fileID: 2399508337687222731, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.45
+      value: 2.498
       objectReference: {fileID: 0}
     - target: {fileID: 2399508337687222731, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
       propertyPath: m_LocalPosition.z

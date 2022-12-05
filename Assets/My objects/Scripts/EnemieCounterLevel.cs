@@ -10,11 +10,12 @@ public class EnemieCounterLevel : MonoBehaviour
     private GameObject enemiesObj;
 
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         anim = GetComponent<Animator>();
         enemiesObj = GameObject.Find("Enemies");
         countEnemies = getChildren(enemiesObj);
+        Debug.Log(countEnemies);
     }
 
     // Update is called once per frame
@@ -42,4 +43,17 @@ public class EnemieCounterLevel : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         anim.SetBool("Opened", true);
     }
+
+    #region Metodo para iniciar en una posicion especifica cada nivel del portal
+    private void OnLevelWasLoaded(int level)
+    {
+        FindStartPos();
+    }
+
+
+    void FindStartPos()
+    {
+        transform.position = GameObject.FindWithTag("PortalStartPos").transform.position;
+    }
+    #endregion
 }

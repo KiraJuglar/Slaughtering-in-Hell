@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]private LayerMask groundLayer; // Mascara del suelo
     private BoxCollider2D boxCollider; // Box Collider del player
     private bool shooting; // Validamos si el jugador esta disparando
+    private GameObject[] players;
 
     #region Brinco
     [SerializeField] private bool jumpRequest = false;
@@ -311,6 +312,24 @@ public class PlayerController : MonoBehaviour
             _nDashes = _maxDashes;
         }
         _canDash = true;
+    }
+    #endregion
+
+    #region Metodo para iniciar en una posicion especifica cada nivel
+    private void OnLevelWasLoaded(int level)
+    {
+        FindStartPos();
+        players = GameObject.FindGameObjectsWithTag("Player");
+        if (players.Length > 1)
+        {
+            Destroy(players[1]);
+        }
+    }
+
+
+    void FindStartPos()
+    {
+        transform.position = GameObject.FindWithTag("StartPos").transform.position;
     }
     #endregion
 
