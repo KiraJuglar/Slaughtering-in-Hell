@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class GameView : MonoBehaviour
 {
     [SerializeField] Image ammo1, ammo2, health1, health2, health3, healthP, frag, armor1, armor2, armor3, armorP;
+    [SerializeField] Image bull1, bull2, bull3, shel1, shel2, shel3;
     GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -21,9 +22,11 @@ public class GameView : MonoBehaviour
         int health = player.GetComponent<PlayerController>().Health;
         int armor = player.GetComponent<PlayerController>().Armor;
         int ammo = player.GetComponent<PlayerController>().GetWeapon().Ammo;
+        int bullAmmo = player.GetComponent<PlayerController>().GetWeapon().getAmmoIn(1);
+        int shelAmmo = player.GetComponent<PlayerController>().GetWeapon().getAmmoIn(3);
 
 
-        ammo1.sprite = Resources.Load<Sprite>("Sprites/" + (ammo/10).ToString());
+        ammo1.sprite = Resources.Load<Sprite>("Sprites/" + ((int)(ammo/10)).ToString());
         ammo2.sprite = Resources.Load<Sprite>("Sprites/" + (ammo%10).ToString());
 
         if(health > 99)
@@ -54,5 +57,12 @@ public class GameView : MonoBehaviour
             armor3.sprite = Resources.Load<Sprite>("Sprites/" + (armor % 10).ToString());
         }
 
+        bull1.sprite = Resources.Load<Sprite>("Sprites/Yellow Numbers/" + (bullAmmo / 100).ToString());
+        bull2.sprite = Resources.Load<Sprite>("Sprites/Yellow Numbers/" + (bullAmmo / 10).ToString());
+        bull3.sprite = Resources.Load<Sprite>("Sprites/Yellow Numbers/" + (bullAmmo % 10).ToString());
+
+        shel1.sprite = Resources.Load<Sprite>("Sprites/Yellow Numbers/" + (shelAmmo / 100).ToString());
+        shel2.sprite = Resources.Load<Sprite>("Sprites/Yellow Numbers/" + (shelAmmo / 10).ToString());
+        shel3.sprite = Resources.Load<Sprite>("Sprites/Yellow Numbers/" + (shelAmmo % 10).ToString());
     }
 }

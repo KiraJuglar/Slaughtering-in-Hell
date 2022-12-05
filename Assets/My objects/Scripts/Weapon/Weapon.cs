@@ -83,13 +83,13 @@ public class Weapon : MonoBehaviour
                 range = 0.5f;
                 rate = 0.5f;
                 damage = 100;
-                ammoCapacity = 50;
+                ammoCapacity = 200;
                 break;
             case WeaponType.assaultRifle:
                 range = 1f;
                 rate = 0.1f;
                 damage = 30;
-                ammoCapacity = 200;
+                ammoCapacity = 100;
                 break;
             case WeaponType.machineGun:
                 range = 0.7f;
@@ -119,6 +119,11 @@ public class Weapon : MonoBehaviour
     public int Ammo
     {
         get { return ammo[(int)type]; }
+    }
+
+    public int getAmmoIn(int i)
+    {
+        return ammo[i];
     }
 
     public void CollectAmmo(int ammo, WeaponType wType)
