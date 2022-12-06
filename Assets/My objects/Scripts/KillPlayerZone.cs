@@ -25,17 +25,12 @@ public class KillPlayerZone : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(DeadAnimation());
+            DeadAnimation();
         }
     }
 
-    IEnumerator DeadAnimation()
+    void DeadAnimation()
     {
-        anim.SetBool("death2", true);
-        Rigidbody2D rigidBody;
-        player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
-        yield return new WaitForSeconds(2f);
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        player.GetComponent<PlayerController>().TakeDamage(500);
     }
 }

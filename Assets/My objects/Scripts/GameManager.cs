@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public enum gameState
 {
@@ -13,7 +15,6 @@ public class GameManager : MonoBehaviour
 {
     public gameState currentGameState = gameState.menu;
     public static GameManager sharedInstance;
-    [SerializeField] int score = 0;
     [Range(1, 10)] public int difficulty = 1;
 
 
@@ -39,12 +40,19 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         SetGameState(gameState.gameOver);
+        Debug.Log("Game over");
     }
 
     public void GameMenu()
     {
         SetGameState(gameState.menu);
     }
+
+    public void ReloadLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+    }
+
 
     void SetGameState(gameState newGameState)
     {
@@ -57,7 +65,7 @@ public class GameManager : MonoBehaviour
                 //Iniciar el juego
                 break;
             case gameState.gameOver:
-                //Finalizar el juego
+                SceneManager.LoadScene("GameOverScene");
                 break;
         }
         currentGameState = newGameState;

@@ -74,19 +74,19 @@ public class Weapon : MonoBehaviour
         switch(weapon)
         {
             case WeaponType.pistol:
-                range = 0.5f;
+                range = 2f;
                 rate = 0.5f;
                 damage = 25;
                 ammoCapacity = 100;
                 break;
             case WeaponType.shotgun:
-                range = 0.5f;
+                range = 1f;
                 rate = 0.5f;
                 damage = 100;
                 ammoCapacity = 200;
                 break;
             case WeaponType.assaultRifle:
-                range = 1f;
+                range = 2f;
                 rate = 0.1f;
                 damage = 30;
                 ammoCapacity = 100;

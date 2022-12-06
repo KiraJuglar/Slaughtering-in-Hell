@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 13103975}
   m_Layer: 0
   m_Name: Imperial
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca72e9a12ca57748905d64ca95d81aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 2
   damage: 30
   health: 70
   canShoot: 0

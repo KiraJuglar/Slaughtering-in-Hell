@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     #region Variables de stats del jugador
     [SerializeField] int healthPoints = INITIAL_HEALTH;
     [SerializeField] int armorPoints = INITIAL_ARMOR;
+    public int lives = 3;
+    bool isDead = false;
     #endregion
 
     #region Variables para disparo de jugador
@@ -277,17 +279,37 @@ public class PlayerController : MonoBehaviour
     {
         rigidBody.velocity = new Vector2(-5, 5);
         healthPoints -= damage;
-        if (healthPoints <= 0)
+        if (healthPoints <= 0 && !isDead)
         {
-            rigidBody.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | 
-            RigidbodyConstraints2D.FreezePositionY;
-            Debug.Log("Game Over");
-            anim.SetBool("death", true);
+            if (lives > 0)
+                StartCoroutine(Death());
+            else
+            {
+                GameManager.sharedInstance.GameOver();
+            }
         }
         else
         {
             anim.SetTrigger("damaged");
         }
+    }
+
+    public IEnumerator Death()
+    {
+        rigidBody.constraints = RigidbodyConstraints2D.FreezePositionX |
+            RigidbodyConstraints2D.FreezePositionY;
+        anim.SetBool("death", true);
+        isDead = true;
+        yield return new WaitForSeconds(3);
+        anim.SetBool("death", false);
+        lives--;
+        healthPoints = INITIAL_HEALTH;
+        
+        rigidBody.constraints = RigidbodyConstraints2D.None;
+        rigidBody.constraints = RigidbodyConstraints2D.FreezeRotation;
+        FindStartPos();
+        isDead = false;
+        
     }
 
     #region Metodo para validar si el player esta tocando el suelo
