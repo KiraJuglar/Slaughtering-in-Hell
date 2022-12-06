@@ -9,6 +9,8 @@ public enum CollectableType
     fusilAmmo,
     shotgunAmmo,
     armor,
+    shotgun,
+    fusil
 }
 
 public class Collectables : MonoBehaviour
@@ -44,6 +46,12 @@ public class Collectables : MonoBehaviour
                 break;
             case CollectableType.armor:
                 player.GetComponent<PlayerController>().CollectArmor(this.value);
+                break;
+            case CollectableType.shotgun:
+                player.GetComponent<PlayerController>().UnlockWeapon(1);
+                break;
+            case CollectableType.fusil:
+                player.GetComponent<PlayerController>().UnlockWeapon(2);
                 break;
         }
 

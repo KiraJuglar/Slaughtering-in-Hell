@@ -337,6 +337,11 @@ public class PlayerController : MonoBehaviour
         return weapon;
     }
 
+    public void UnlockWeapon(int idx)
+    {
+        weaponsUnlocked[idx] = true;
+    }
+
     public int Health
     {
         get
