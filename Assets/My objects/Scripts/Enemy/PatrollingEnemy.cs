@@ -9,12 +9,10 @@ public class PatrollingEnemy : Enemy
     [SerializeField] float visionDistance = 3f;
     bool playerDetected = false;
 
-    private Rigidbody2D enemyRigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
-        enemyRigidbody = GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
@@ -44,10 +42,10 @@ public class PatrollingEnemy : Enemy
             else
                 this.transform.position = Vector2.MoveTowards(this.transform.position, player.position + diference, speed * Time.deltaTime);
         }
-        else
+        else 
         {
             #region Patrullar
-            if (!EndOfPlatform() || enemyRigidbody.velocity.x == 0)
+            if (!EndOfPlatform() || rigidBody.velocity.x == 0)
                 facingRight = !facingRight;
             PlatformPatrolling();
             #endregion
@@ -86,16 +84,11 @@ public class PatrollingEnemy : Enemy
             currentSpeed = -speed;
         }
 
-        enemyRigidbody.velocity = new Vector2(currentSpeed, enemyRigidbody.velocity.y);
+        rigidBody.velocity = new Vector2(currentSpeed, rigidBody.velocity.y);
         anim.SetBool("run", true);
 
     }
 
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(vision.position, vision.position + Vector3.left);
-    }
 
 }

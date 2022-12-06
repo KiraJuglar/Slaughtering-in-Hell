@@ -23,10 +23,11 @@ public class Enemy : MonoBehaviour
     #region Variables de movimiento
     protected bool facingRight = true;
     protected Vector3 diference = new Vector3(1, 0, 0);
+    protected bool hasBeenPunched = false;
     #endregion
 
     protected Animator anim; // Animacion
-    Rigidbody2D rigidBody;
+    protected Rigidbody2D rigidBody;
 
     public EnemieCounterLevel enemiesCounter;
 
@@ -85,6 +86,12 @@ public class Enemy : MonoBehaviour
             StartCoroutine(WaitAttacked());
         }
     }
+
+    /*public void DamageImpulse(Vector2 punch)
+    {
+        Debug.Log("Impulso");
+        rigidBody.AddForce(Vector2.up * 100, ForceMode2D.Impulse);
+    }*/
 
     protected void Attack()
     {

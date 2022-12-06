@@ -166,12 +166,47 @@ public class PlayerController : MonoBehaviour
 
     void Punch()
     {
-
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 1f);
+        Vector2 punchDirection;
+        Vector3 pointOfPunch = this.transform.position;
+        if (GetComponent<SpriteRenderer>().flipX == true)
+        {
+            punchDirection = Vector2.right;
+            pointOfPunch.x += 0.5f;
+        }
+        else
+        {
+            punchDirection = Vector2.left;
+            pointOfPunch.x -= 0.5f;
+        }
+        pointOfPunch.y += 0.5f;
+        RaycastHit2D hit = Physics2D.Raycast(pointOfPunch, punchDirection, 1f);
+        if (hit)
+            Debug.Log(hit.transform.name);
         if(hit && hit.transform.tag == "Enemy")
         {
             hit.transform.GetComponent<Enemy>().TakeDamage(punchDamage);
+            //hit.transform.GetComponent<Enemy>().DamageImpulse(transform.position);
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Vector2 punchDirection;
+        Vector3 pointOfPunch = this.transform.position;
+        if (GetComponent<SpriteRenderer>().flipX == true)
+        {
+            punchDirection = Vector2.right;
+            pointOfPunch.x += 0.5f;
+            
+        }
+        else
+        {
+            punchDirection = Vector2.left;
+            pointOfPunch.x -= 0.5f;
+        }
+        pointOfPunch.y += 0.5f;
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(pointOfPunch, pointOfPunch + (Vector3)punchDirection);
     }
 
     #region M�todos de movimiento del jugador
@@ -240,6 +275,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        rigidBody.velocity = new Vector2(-5, 5);
         healthPoints -= damage;
         if (healthPoints <= 0)
         {
