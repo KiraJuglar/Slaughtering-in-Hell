@@ -1437,6 +1437,73 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e612b9d4212bcd43a9e994e20a8439d, type: 3}
+--- !u!1001 &418454800
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1275464074001685170, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: m_Name
+      value: KillZonePlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464074001685171, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 589086238}
+    - target: {fileID: 1275464074001685171, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 216969489}
+    - target: {fileID: 1275464074001685174, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464074001685174, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464074001685174, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464074001685174, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464074001685174, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464074001685174, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464074001685174, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464074001685174, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464074001685174, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464074001685174, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464074001685174, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4f7390544230ef45bebca4e5401a34a, type: 3}
 --- !u!1001 &441930413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1451,7 +1518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7447137522541277301, guid: ecaa93cd6361b2c46a045c2a2fa57ce2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7447137522541277321, guid: ecaa93cd6361b2c46a045c2a2fa57ce2, type: 3}
       propertyPath: m_Pivot.x
@@ -2119,6 +2186,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
+--- !u!1 &589086238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5793326515315879759, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
+  m_PrefabInstance: {fileID: 589086237}
+  m_PrefabAsset: {fileID: 0}
 --- !u!96 &589086239 stripped
 TrailRenderer:
   m_CorrespondingSourceObject: {fileID: 589086239, guid: 3ce7a5042e71a224e8e927eb81bcf511, type: 3}
@@ -8267,7 +8339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2142643129, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
       propertyPath: sceneBuildIndex
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2399508337687222728, guid: 464035321a25e3842b49758f48ce2c29, type: 3}
       propertyPath: portalEnd
