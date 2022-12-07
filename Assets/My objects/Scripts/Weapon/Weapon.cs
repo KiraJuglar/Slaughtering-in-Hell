@@ -36,6 +36,10 @@ public class Weapon : MonoBehaviour
 
     public bool shoot(Vector2 facingDirection)
     {
+        int shoots = 1;
+        if (type == WeaponType.shotgun)
+            shoots = 3;
+
         if (ammo[(int)type] > 0)
         {
             if (canShoot)
@@ -48,12 +52,18 @@ public class Weapon : MonoBehaviour
 
                 canShoot = false;
                 StartCoroutine(shootTime());
-                float angle = Mathf.Atan2(facingDirection.y, facingDirection.x) * Mathf.Rad2Deg;
-                Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
-                GameObject newBullet = Instantiate(bullet, transform.position + auxV, rotationTarget);
-                newBullet.GetComponent<Bullet>().Damage = damage;
-                newBullet.GetComponent<Bullet>().DestroyTime = range;
-                ammo[(int)type]--;
+                for(int i = 0; i < shoots; i++)
+                {
+                    facingDirection.y += i/2;
+                    facingDirection.x += i/2;
+                    float angle = Mathf.Atan2(facingDirection.y, facingDirection.x) * Mathf.Rad2Deg;
+                    Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
+                    GameObject newBullet = Instantiate(bullet, transform.position + auxV, rotationTarget);
+                    newBullet.GetComponent<Bullet>().Damage = damage;
+                    newBullet.GetComponent<Bullet>().DestroyTime = range;
+                    ammo[(int)type]--;
+                }
+                
             }
             return false;
         }
@@ -81,7 +91,7 @@ public class Weapon : MonoBehaviour
                 break;
             case WeaponType.shotgun:
                 range = 1f;
-                rate = 0.5f;
+                rate = 0.8f;
                 damage = 100;
                 ammoCapacity = 200;
                 break;
@@ -129,5 +139,10 @@ public class Weapon : MonoBehaviour
     public void CollectAmmo(int ammo, WeaponType wType)
     {
         this.ammo[(int)wType] += ammo;
+    }
+
+    public WeaponType Type
+    {
+        get { return type; }
     }
 }

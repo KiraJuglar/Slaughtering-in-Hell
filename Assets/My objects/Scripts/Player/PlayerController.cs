@@ -113,7 +113,9 @@ public class PlayerController : MonoBehaviour
         aim.position = (Vector3)facingDirection.normalized + transform.position;
         if (Input.GetMouseButton(0))
         {
-            needreload =  weapon.shoot(facingDirection);//Se intenta disparar, si no hay munición se recargará el arma
+        
+        
+            weapon.shoot(facingDirection);//Se intenta disparar, si no hay munición se recargará el arma
             /*if (needreload && ammo > 0)
             {
                 ReloadWeapon();
@@ -278,21 +280,33 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         rigidBody.velocity = new Vector2(-5, 5);
-        healthPoints -= damage;
-        if (healthPoints <= 0 && !isDead)
+
+        armorPoints -= damage;
+        if(armorPoints <= 0)
         {
-            lives--;
-            if (lives > 0)
-                StartCoroutine(Death());
+            healthPoints += armorPoints;
+            armorPoints = 0;
+            if (healthPoints <= 0 && !isDead)
+            {
+                lives--;
+                if (lives > 0)
+                    StartCoroutine(Death());
+                else
+                {
+                    GameManager.sharedInstance.GameOver();
+                }
+            }
             else
             {
-                GameManager.sharedInstance.GameOver();
+                anim.SetTrigger("damaged");
             }
         }
         else
         {
             anim.SetTrigger("damaged");
         }
+
+
     }
 
     public IEnumerator Death()
@@ -305,8 +319,8 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("death", false);
         healthPoints = INITIAL_HEALTH;
         
-        rigidBody.constraints = RigidbodyConstraints2D.None;
-        rigidBody.constraints = RigidbodyConstraints2D.FreezeRotation;
+        rigidBody.constraints = ~RigidbodyConstraints2D.FreezePositionX |
+           ~RigidbodyConstraints2D.FreezePositionY;
         FindStartPos();
         isDead = false;
         
