@@ -47,11 +47,6 @@ public class NPC : MonoBehaviour
         dialoguePanel.SetActive(false);
     }
 
-    public void Test()
-    {
-        Debug.Log("JALA MIERDA >:v");
-    }
-
     IEnumerator Typing()
     {
         foreach(char letter in dialogue[index].ToCharArray())
@@ -63,7 +58,6 @@ public class NPC : MonoBehaviour
 
     public void NextLine()
     {
-        Debug.Log("Si jala el boton");
         contButton.SetActive(false);
         if (index < dialogue.Length - 1)
         {
