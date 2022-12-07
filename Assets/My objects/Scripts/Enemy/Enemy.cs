@@ -75,10 +75,11 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            rigidBody.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | 
-            RigidbodyConstraints2D.FreezePositionY;
+            hasBeenAtacked = true;
+            speed = 0;
+            rigidBody.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
             anim.SetBool("death", true);
-            Destroy(gameObject, 1f);
+            Destroy(gameObject, 0.5f);
             enemiesCounter.countEnemies--;
         }
         else

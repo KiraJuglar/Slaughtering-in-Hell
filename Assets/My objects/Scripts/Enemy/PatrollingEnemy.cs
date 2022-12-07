@@ -17,8 +17,8 @@ public class PatrollingEnemy : Enemy
 
     private void FixedUpdate()
     {
-
-        EnemyDirection();
+        if(!hasBeenAtacked)
+            EnemyDirection();
         
         if (!playerDetected)
             playerDetected = PlayerDetection();

@@ -309,16 +309,15 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator Death()
     {
-        rigidBody.constraints = RigidbodyConstraints2D.FreezePositionX |
-            RigidbodyConstraints2D.FreezePositionY;
+        rigidBody.constraints = RigidbodyConstraints2D.FreezeAll;
         anim.SetBool("death", true);
         isDead = true;
         yield return new WaitForSeconds(3);
         anim.SetBool("death", false);
         healthPoints = INITIAL_HEALTH;
-        
-        rigidBody.constraints = ~RigidbodyConstraints2D.FreezePositionX |
-           ~RigidbodyConstraints2D.FreezePositionY;
+
+        rigidBody.constraints = RigidbodyConstraints2D.None;
+        rigidBody.constraints = RigidbodyConstraints2D.FreezeRotation;
         FindStartPos();
         isDead = false;
         
