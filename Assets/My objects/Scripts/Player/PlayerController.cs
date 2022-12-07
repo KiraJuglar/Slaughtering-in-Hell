@@ -38,7 +38,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]private LayerMask groundLayer; // Mascara del suelo
     private BoxCollider2D boxCollider; // Box Collider del player
     private bool shooting; // Validamos si el jugador esta disparando
-    private GameObject[] players;
 
     #region Brinco
     [SerializeField] private bool jumpRequest = false;
@@ -57,7 +56,6 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     [SerializeField] Transform startPositionPlayer;
-
 
     // Start is called before the first frame update
     void Start()
