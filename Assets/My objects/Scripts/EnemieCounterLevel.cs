@@ -41,6 +41,7 @@ public class EnemieCounterLevel : MonoBehaviour
     private int getChildren(GameObject obj)
     {
         int count = obj.transform.childCount;
+        Debug.Log(count);
         return count;
     }
 
