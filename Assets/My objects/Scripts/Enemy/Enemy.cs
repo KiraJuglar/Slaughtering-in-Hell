@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
     #region Variables de movimiento
     protected bool facingRight = true;
     protected Vector3 diference = new Vector3(1, 0, 0);
-    protected bool hasBeenPunched = false;
+    protected bool hasBeenAtacked = false;
     #endregion
 
     protected Animator anim; // Animacion
@@ -105,14 +105,23 @@ public class Enemy : MonoBehaviour
 
     protected IEnumerator Shoot()
     {
-        Vector3 auxV = new Vector3(-0.5f,0.5f,0);
+        Vector3 pointOfPunch = this.transform.position;
+        if (transform.eulerAngles.y == 180)
+        {
+            pointOfPunch.x += 0.7f;
+        }
+        else
+        {
+            pointOfPunch.x -= 0.7f;
+        }
+        pointOfPunch.y += 0.5f;
         canShoot = false;
         Vector3 direction = player.position - transform.position;
         if (player && Vector3.Distance(this.transform.position, player.position) < 10)
         {
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
-            GameObject newBullet = Instantiate(bullet, transform.position + auxV, rotationTarget);
+            GameObject newBullet = Instantiate(bullet, pointOfPunch, rotationTarget);
             newBullet.GetComponent<Bullet>().Damage = damage;
             newBullet.GetComponent<Bullet>().DestroyTime = 5;
                 
@@ -135,6 +144,10 @@ public class Enemy : MonoBehaviour
         {
             canAttack = true;
         }
+        else if(collision.CompareTag("Enemy"))
+        {
+            facingRight = !facingRight;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -147,12 +160,14 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator WaitAttacked()
     {
-        rigidBody.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | 
-        RigidbodyConstraints2D.FreezePositionY;
+        float currentSpeed = speed;
+        speed = 0;
+        hasBeenAtacked = true;
         anim.SetTrigger("damaged");
         yield return new WaitForSeconds(2);
-        rigidBody.GetComponent<Rigidbody2D>().constraints = ~RigidbodyConstraints2D.FreezePositionX | 
-        ~RigidbodyConstraints2D.FreezePositionY;
+        speed = currentSpeed;
+        hasBeenAtacked = false;
+        
     }
 
 }

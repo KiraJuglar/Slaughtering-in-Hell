@@ -42,13 +42,18 @@ public class PatrollingEnemy : Enemy
             else
                 this.transform.position = Vector2.MoveTowards(this.transform.position, player.position + diference, speed * Time.deltaTime);
         }
-        else 
+        else if(!hasBeenAtacked)
         {
             #region Patrullar
+            
             if (!EndOfPlatform() || rigidBody.velocity.x == 0)
                 facingRight = !facingRight;
             PlatformPatrolling();
             #endregion
+        }
+        else
+        {
+            rigidBody.velocity = Vector2.zero;
         }
     }
 
