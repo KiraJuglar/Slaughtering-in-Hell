@@ -6,6 +6,7 @@ public class GameView : MonoBehaviour
 {
     [SerializeField] Image ammo1, ammo2, health1, health2, health3, healthP, frag, armor1, armor2, armor3, armorP;
     [SerializeField] Image bull1, bull2, bull3, shel1, shel2, shel3;
+    [SerializeField] Image lives;
     GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,9 @@ public class GameView : MonoBehaviour
         int ammo = player.GetComponent<PlayerController>().GetWeapon().Ammo;
         int bullAmmo = player.GetComponent<PlayerController>().GetWeapon().getAmmoIn(1);
         int shelAmmo = player.GetComponent<PlayerController>().GetWeapon().getAmmoIn(3);
+        int live = player.GetComponent<PlayerController>().Lives;
+
+        lives.sprite = Resources.Load<Sprite>("Sprites/" + live.ToString());
 
 
         ammo1.sprite = Resources.Load<Sprite>("Sprites/" + ((int)(ammo/10)).ToString());

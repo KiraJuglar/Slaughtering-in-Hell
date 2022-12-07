@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     #region Variables de stats del jugador
     [SerializeField] int healthPoints = INITIAL_HEALTH;
     [SerializeField] int armorPoints = INITIAL_ARMOR;
-    public int lives = 3;
+    int lives = 3;
     bool isDead = false;
     #endregion
 
@@ -281,6 +281,7 @@ public class PlayerController : MonoBehaviour
         healthPoints -= damage;
         if (healthPoints <= 0 && !isDead)
         {
+            lives--;
             if (lives > 0)
                 StartCoroutine(Death());
             else
@@ -302,7 +303,6 @@ public class PlayerController : MonoBehaviour
         isDead = true;
         yield return new WaitForSeconds(3);
         anim.SetBool("death", false);
-        lives--;
         healthPoints = INITIAL_HEALTH;
         
         rigidBody.constraints = RigidbodyConstraints2D.None;
@@ -335,6 +335,11 @@ public class PlayerController : MonoBehaviour
     public Weapon GetWeapon()
     {
         return weapon;
+    }
+
+    public int Lives
+    {
+        get { return lives; }
     }
 
     public void UnlockWeapon(int idx)

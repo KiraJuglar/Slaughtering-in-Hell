@@ -124,7 +124,6 @@ public class Enemy : MonoBehaviour
             GameObject newBullet = Instantiate(bullet, pointOfPunch, rotationTarget);
             newBullet.GetComponent<Bullet>().Damage = damage;
             newBullet.GetComponent<Bullet>().DestroyTime = 5;
-                
         }
         yield return new WaitForSeconds(timeAttack);
         canShoot = true;
