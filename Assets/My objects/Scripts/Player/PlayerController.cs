@@ -28,10 +28,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Camera playerCamera; //Camara que nos otorgara la posici�n en la que apunta y dispara el usuario
     [SerializeField] Transform aim; //Mira del jugador
     [SerializeField] int punchDamage = 20;
+    [SerializeField] GameObject granade;
+    [SerializeField] int force = 50;
+    [SerializeField] int granadescount = 0;
     Vector2 facingDirection;
     Weapon weapon;
     bool[] weaponsUnlocked = { true, false, false, false, false };
     bool needreload = false;
+
     #endregion
 
     private Animator anim; // Animacion
@@ -112,12 +116,17 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
         
-        
             weapon.shoot(facingDirection);//Se intenta disparar, si no hay munición se recargará el arma
             /*if (needreload && ammo > 0)
             {
                 ReloadWeapon();
             }*/
+        }
+
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            if(granadescount > 0)
+                LanzarGranada();
         }
 
         //if (Input.GetKeyDown(KeyCode.R))
@@ -164,6 +173,31 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         anim.SetBool("grounded", isGrounded());
+    }
+
+    void LanzarGranada()
+    {
+        Vector3 pointOfPunch = this.transform.position;
+        if (GetComponent<SpriteRenderer>().flipX == true)
+        {
+            pointOfPunch.x += 0.5f;
+        }
+        else
+        {
+            pointOfPunch.x -= 0.5f;
+        }
+        pointOfPunch.y += 0.5f;
+
+
+        float angle = Mathf.Atan2(facingDirection.y, facingDirection.x) * Mathf.Rad2Deg;
+        Quaternion rotationTarget = Quaternion.AngleAxis(angle, Vector3.forward);
+        Vector2 dir = (aim.position - transform.position).normalized;
+
+        GameObject nuevaGranada = Instantiate(granade, transform.position + pointOfPunch, Quaternion.identity);
+
+        nuevaGranada.GetComponent<Rigidbody2D>().AddForce(force * dir, ForceMode2D.Impulse);
+        granadescount--;
+
     }
 
     void Punch()

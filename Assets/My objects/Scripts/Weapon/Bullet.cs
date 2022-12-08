@@ -32,6 +32,10 @@ public class Bullet : MonoBehaviour
             collision.GetComponent<PlayerController>().TakeDamage(damage);
             impacts--;
         }
+        else if (collision.CompareTag("Ground"))
+            Destroy(gameObject);
+             
+
     }
 
     public int Damage
